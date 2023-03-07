@@ -8,7 +8,7 @@ const NavBar = () => {
     <>
       {/* <!-- Navbar --> */}
       <nav
-        className="flex justify-around py-4 bg-main text-white
+        className="flex justify-around py-4 bg-navColor text-white
     backdrop-blur-md shadow-lg  sticky 
      top-0 left-0 right-0 z-20 h-20 "
       >

@@ -11,12 +11,17 @@ module.exports = {
       fontSize:{
         h1:"2.6rem"
       },
-      screens:{
-        xs:"475px"
+      screens: {
+        qs: { max: "479px" },
+        sm: { min: "480px" },
+        md: { min: "768px" },
+        lg: { min: "976px" },
+        xl: { min: "1440px" },
       },
       
       colors: {
-        main: "#959F87",
+        navColor: "#959F87",
+        main: "#E9D5C3",
         whatsIcon: "#64B161",
         footerText: "#E9D5C3",
         star: "#FFB000",

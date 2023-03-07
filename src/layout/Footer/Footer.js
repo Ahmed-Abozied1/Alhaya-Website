@@ -8,7 +8,7 @@ import facebook from "../../images/facebook.png";
 import twitter from "../../images/twitter.png";
 import whatsapp1 from "../../images/whatsapp 1.png";
 import youtube from "../../images/youtube.png";
-import "./Footer.css"
+import "./Footer.css";
 const Footer = () => {
   const Links = [
     {
@@ -52,30 +52,9 @@ const Footer = () => {
         },
       ],
     },
-    // {
-    //   title: "Social Media Links",
-    //   links: [
-    //     {
-    //       icon: facebook,
-    //       link: "/dashboard",
-    //     },
-    //     {
-    //       name: twitter ,
-    //       link: "/about-us",
-    //     },
-    //     {
-    //       name: whatsapp1 ,
-    //       link: "/profile",
-    //     },
-    //     // {
-    //     //   name: "Change Password",
-    //     //   link: "/password",
-    //     // },
-    //   ],
-    // },
   ];
   return (
-    <div className="bg-main py-4 bprder=t-2 border-black">
+    <div className="bg-navColor py-4 bprder=t-2 border-black">
       <div className="container mx-auto px-2 ">
         <div
           className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between
@@ -124,42 +103,42 @@ const Footer = () => {
             </h3>
             <ul className="text-footerText text-xl">
               <li className="flex items-baseline ">
-                  <Link className="mr-7">
-                    <span>
-                      <img alt="" src={youtube}  className="h-10"/>
-                    </span>
-                  </Link >
-                  <Link className="mr-7">
-                    <span>
-                      <img alt="" src={facebook}  className="h-10"/>
-                    </span>
-                  </Link>
-                  <Link className="mr-7">
-                    <span>
-                      <img alt="" src={twitter}  className="h-10"/>
-                    </span>
-                  </Link>
+                <Link className="mr-7">
+                  <span>
+                    <img alt="" src={youtube} className="h-10" />
+                  </span>
+                </Link>
+                <Link className="mr-7">
+                  <span>
+                    <img alt="" src={facebook} className="h-10" />
+                  </span>
+                </Link>
+                <Link className="mr-7">
+                  <span>
+                    <img alt="" src={twitter} className="h-10" />
+                  </span>
+                </Link>
               </li>
             </ul>
-          
-           <div className="whatsFooterIcon mt-3 flex items-center justify-around">
-             <Link>
-             <img src={whatsapp1} alt="" className="h-8"/>
 
-             </Link>
-<Link>
-<span className="text-sm">WhatsApp us</span>
-
-</Link>             
+            <div className="whatsFooterIcon mt-3 flex items-center justify-around">
+              <Link>
+                <img src={whatsapp1} alt="" className="h-8" />
+              </Link>
+              <Link>
+                <span className="text-sm">WhatsApp us</span>
+              </Link>
             </div>
-         
           </div>
         </div>
       </div>
       <div class="container mx-auto py-4 ">
-    <hr class="border-t border-footerText m-4  flex items-center"/>
-    <p class="text-center text-footerText">Copyright <span className="text-white">©</span> All Rights reserved for Alhayah in Africa</p>
-  </div>
+        <hr class="border-t border-footerText m-4  flex items-center" />
+        <p class="text-center text-footerText">
+          Copyright <span className="text-white">©</span> All Rights reserved
+          for Alhayah in Africa
+        </p>
+      </div>
     </div>
   );
 };
