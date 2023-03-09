@@ -18,8 +18,96 @@ html {
   font-family: 'Roboto', sans-serif;
   font-family: 'Rozha One', serif;
 }
+/* Section Scroll Vedios */
+.scrollVedios{
+
+margin: 0 175px 0 175px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+background: #959F87;
+border: 5px solid #959F87;
+border-radius: 100px 0px;
+}
 @media only screen and (max-width: 600px) {
   .header {
    font-size: 48px;
   }
+}
+
+.slider{
+  width: 100%;
+  height: 400px;
+}
+.headerr{
+  margin: 50px auto;
+  text-align: center;
+  font-size: 80px;
+}
+
+.slide, .slide img{
+  width: 100%;
+  height: 350px;
+}
+.slide{
+  /* opacity: .5; */
+  transform: scale(.7);
+  transition: .5s;
+  /* filter: blur(5px); */
+}
+
+.slide-active{
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+.arrow{
+  font-size: 30px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px #ccc;
+  display: flex;
+  width: 50px;
+  position: absolute;
+  top: 200px;
+  /* z-index: 100; */
+  cursor: pointer;
+}
+.arrow-right{
+  right: 20px;
+}
+.arrow-left{
+  left: 20px;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 3px #ccc;
+}
+.dot-active{
+  background: #121227;
+  box-shadow: 0 0 15px 10px #ccc;
+}
+@media screen and (max-width: 768px) {
+  .header{
+    font-size: 7vw;
+  }
+}
+.for-slick-slider{
+  display:  flex;
+
+}
+.for-slick-slider .items{
+  width: 350px;
+  height: 250px;
+  margin: 50px;
+
+}
+
+.for-slick-slider .items img{
+  width: 350px;
+  height: 250px;
 }
