@@ -3,13 +3,13 @@ import Slider from 'react-slick';
 // import icons
 
 
-import img1 from "/HomeImages/ScrollVedioImage/img1.png";
-import img2 from "/HomeImages/ScrollVedioImage/img2.png";
-import img3 from "/HomeImages/ScrollVedioImage/img3.png";
+// import img1 from "../../HomeImages/ScrollVedioImage/img1.png";
+// import img2 from "../..//HomeImages/ScrollVedioImage/img2.png";
+// import img3 from "../..//HomeImages/ScrollVedioImage/img3.png";
+import { Vedios } from '../../Data/Vedios';
 
 
 
-const images = [img1, img2, img3, img1];
 
 
 
@@ -19,7 +19,7 @@ function ScrollVedios() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -29,11 +29,11 @@ function ScrollVedios() {
     beforeChange: (current, next)=>setSlideIndex(next),
     centerMode: true,
     
-    appendDots: (dots) => (
-      <div>
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
+    // appendDots: (dots) => (
+    //   <div>
+    //     <ul style={{ margin: "0px" }}> {dots} </ul>
+    //   </div>
+    // ),
     customPaging: (current, next) => (
       <div className={current === slideIndex ? 'dot dot-active' : 'dot'}>
       </div>
@@ -55,9 +55,9 @@ function ScrollVedios() {
         <div className="slider">
       <Slider {...settings}>
           {
-            images.map((img, index)=>(
+            Vedios.map((img, index)=>(
               <div className={index === slideIndex ? 'slide slide-active': 'slide'} key={index}>
-                <img src={img} alt="" />
+                <img src={`/HomeImages/ScrollVedioImage/${img?.image}`} alt="" />
               </div>
             ))
           }

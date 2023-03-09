@@ -1,13 +1,13 @@
 export const Vedios = [
   {
     name: "Food Distribution",
-    image: "",
+    image: "img1.png",
     title: "Africa Life Foundation",
     link: "",
   },
   {
     name: "Alms distribution",
-    image: "img1.png",
+    image: "img3.png",
     title: "Africa Life Foundation",
     link: "",
   },
