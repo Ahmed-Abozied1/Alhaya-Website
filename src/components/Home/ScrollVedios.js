@@ -2,13 +2,12 @@ import { useState } from "react";
 import Slider from "react-slick";
 
 import { Vedios } from "../../Data/Vedios";
-import ScrollCards from "../ScrollVedios";
+import ScrollCards from "../ScrollCard";
 
 function ScrollVedios() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const settings = {
-
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -18,7 +17,6 @@ function ScrollVedios() {
     beforeChange: (current, next) => setSlideIndex(next),
     centerMode: true,
     arrows: false,
-   
     customPaging: (current, next) => (
       <div className={current === slideIndex ? "dot dot-active" : "dot"}></div>
     ),
@@ -44,20 +42,22 @@ function ScrollVedios() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          
         },
       },
     ],
   };
   return (
-    <section className="h-auto   con  bg-navColor">
+    <section className=" con  bg-navColor">
       <div className="slider">
         <Slider {...settings}>
-          {Vedios.map((img, index) => (
+          {Vedios.map((vedio, index) => (
             <div
               className={index === slideIndex ? "slide slide-active" : "slide"}
               key={index}
             >
-<ScrollCards/>            </div>
+              <ScrollCards vedio={vedio}/>
+            </div>
           ))}
         </Slider>
       </div>

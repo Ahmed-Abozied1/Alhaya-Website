@@ -1,22 +1,22 @@
 import React from "react";
 
-const ScrollCard = () => {
+const ScrollCard = ({vedio}) => {
   return (
-    <div class="  mb-4 cardVedio  overflow-hidden shadow-lg bg-white">
+    <div class="  mb-4 hover:cursor-pointer cardVedio    bg-white">
       <img
-        class=" imgg"
-        src="/HomeImages/ScrollVedioImage/img1.png"
+        class=" vedioImg "
+        src={`/HomeImages/ScrollVedioImage/${vedio?.image}`}
         alt="Sunset in the mountains"
       />
-      <div class="px-6 py-4">
+      <div class=" mt-4 justify-center flex flex-col">
         <div class="font-bold text-xl mb-2 flex justify-center">
-          Food Distribution
+      {vedio.name}
         </div>
         <p class="text-gray-700 text-base flex justify-center">
-          Africa Life Foundation
+         {vedio.title}
         </p>
       </div>
-      <div class="px-6 pt-4   flex justify-center">
+      <div class="px-6 pt-4    flex justify-center">
         <button className="bg-navColor playBtn ">play</button>{" "}
       </div>
     </div>
