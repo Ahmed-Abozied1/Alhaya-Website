@@ -1,69 +1,67 @@
-import { useState } from 'react';
-import Slider from 'react-slick';
-// import icons
+import { useState } from "react";
+import Slider from "react-slick";
 
-
-// import img1 from "../../HomeImages/ScrollVedioImage/img1.png";
-// import img2 from "../..//HomeImages/ScrollVedioImage/img2.png";
-// import img3 from "../..//HomeImages/ScrollVedioImage/img3.png";
-import { Vedios } from '../../Data/Vedios';
-
-
-
-
-
-
-
+import { Vedios } from "../../Data/Vedios";
+import ScrollCards from "../ScrollVedios";
 
 function ScrollVedios() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const settings = {
-    // dots: true,
+
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 1000,
-    beforeChange: (current, next)=>setSlideIndex(next),
+    beforeChange: (current, next) => setSlideIndex(next),
     centerMode: true,
-    
-    // appendDots: (dots) => (
-    //   <div>
-    //     <ul style={{ margin: "0px" }}> {dots} </ul>
-    //   </div>
-    // ),
+    arrows: false,
+   
     customPaging: (current, next) => (
-      <div className={current === slideIndex ? 'dot dot-active' : 'dot'}>
-      </div>
+      <div className={current === slideIndex ? "dot dot-active" : "dot"}></div>
     ),
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: false,
-         
-        }
-      }]
+        },
+      },
+    ],
   };
   return (
-    <div className="container">
-      <h2 className='header'> React Carusel</h2>
-        <div className="slider">
-      <Slider {...settings}>
-          {
-            Vedios.map((img, index)=>(
-              <div className={index === slideIndex ? 'slide slide-active': 'slide'} key={index}>
-                <img src={`/HomeImages/ScrollVedioImage/${img?.image}`} alt="" />
-              </div>
-            ))
-          }
-      </Slider>
-        </div>
-    </div>
+    <section className="h-auto   con  bg-navColor">
+      <div className="slider">
+        <Slider {...settings}>
+          {Vedios.map((img, index) => (
+            <div
+              className={index === slideIndex ? "slide slide-active" : "slide"}
+              key={index}
+            >
+<ScrollCards/>            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 }
 
