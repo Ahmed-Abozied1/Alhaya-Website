@@ -96,6 +96,7 @@ border-radius: 100px 0px;
   width: 350px;
   height: 250px;
 }
+/* ScrollVedio Section**** */
  .con{
  
 /* width: 1092px; */
@@ -164,3 +165,10 @@ height: 52px;
   
 }
 
+/* AboutUs Section */
+
+.aboutUsImage{
+  width: 486px;
+height: 536px;
+
+}
