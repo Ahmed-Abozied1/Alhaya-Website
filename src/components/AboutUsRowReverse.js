@@ -12,13 +12,13 @@ const AboutUsRowReverse = ({title,para, imgSrc}) => {
            className="w-25 object-contain "
          />
        </div>
-       <div className="flex  lg:gap-10 gap-6 flex-col">
+       <div className="flex  lg:gap-4 gap-2 flex-col">
 
          <h1
-          className="xl:text-3xl text-xl capitalize font-sans font-medium xl:leading-relaxed">
+          className="xl:text-3xl text-xl lg:mt-6 mt-8 capitalize font-sans font-medium xl:leading-relaxed">
          {title}
          </h1>
-         <p className="text-black font-normal  leading-8 text-xl xl:text-base xl:leading-8">
+         <p className=" para ">
         {para}
          </p>
          

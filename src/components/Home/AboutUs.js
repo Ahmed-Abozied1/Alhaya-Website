@@ -5,9 +5,12 @@ import Title from "../Title";
 const AboutUs = () => {
   return (
     <div className="my-0 py-0 md:px-20 px-8 bg-dry">
-      <Title title="About us " />
+    <div className="">
+      <Title title="About us "  />
 
-      <AboutUsRow
+    </div>
+<div className="flex  lg:gap-4 gap-10 flex-col ">
+<AboutUsRow
         title="Our Story"
         para="We are a for-profit organization that 
 aims to provide services of aqeeq, alms and 
@@ -29,6 +32,8 @@ the privacy of the donor"
          and delivering them to needy Muslims."
         imgSrc="Group3.png"
       />
+</div>
+     
     </div>
   );
 };
