@@ -6,7 +6,7 @@ const AboutUsRow = ({title,para, imgSrc}) => {
        
        <div className="flex  lg:gap-4 gap-2 flex-col">
 
-         <h1 className="xl:text-3xl text-xl capitalize font-sans font-medium xl:leading-relaxed">
+         <h1 className="xl:text-3xl  text-xl capitalize font-sans font-medium xl:leading-relaxed">
          {title}
          </h1>
          <p className=" para   ">
@@ -14,7 +14,7 @@ const AboutUsRow = ({title,para, imgSrc}) => {
          </p>
          
        </div>
-       <div className='w-full lg:w-auto flex justify-center'>
+       <div className='w-full  lg:w-auto flex justify-center'>
          <img
         
            src={`/HomeImages/${imgSrc}`}

@@ -14,7 +14,8 @@ const AboutUs = () => {
         title="Our Story"
         para="We are a for-profit organization that 
 aims to provide services of aqeeq, alms and 
-vows to our Muslim brothers in the state of Tanzania at nominal prices and in accordance with Islamic law."
+vows to our Muslim brothers in the state of Tanzania 
+at nominal prices and in accordance with Islamic law."
         imgSrc="Group1.png"
       />
       <AboutUsRowReverse
@@ -22,7 +23,7 @@ vows to our Muslim brothers in the state of Tanzania at nominal prices and in ac
         para="We document all our work 
         with videos and photos,
 taking into account honesty, transparency and
-the privacy of the donor"
+the privacy of the donor."
         imgSrc="Group6.png"
       />
       <AboutUsRow

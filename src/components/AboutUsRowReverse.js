@@ -15,7 +15,7 @@ const AboutUsRowReverse = ({title,para, imgSrc}) => {
        <div className="flex  lg:gap-4 gap-2 flex-col">
 
          <h1
-          className="xl:text-3xl text-xl lg:mt-6 mt-8 capitalize font-sans font-medium xl:leading-relaxed">
+          className="xl:text-3xl text-xl lg:mt-6 mt-12 capitalize font-sans font-medium xl:leading-relaxed">
          {title}
          </h1>
          <p className=" para ">
