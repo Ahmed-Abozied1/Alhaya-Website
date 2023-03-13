@@ -92,7 +92,7 @@ html {
   width: 350px;
   height: 250px;
 }
-/* ScrollVedio Section**** */
+/* ScrollVedio Section********/
 .con {
   /* width: 1092px; */
   width: 100%;
@@ -154,7 +154,7 @@ html {
   }
 }
 
-/* AboutUs Section */
+/* AboutUs Section *******/
 
 .aboutUsImage {
   width: 486px;
@@ -169,7 +169,7 @@ html {
 
   color: #000000;
 }
-/* Services Section */
+/* Services Section **********/
 .servicesCon {
   width: 100%;
   max-width: 1092px;
@@ -184,29 +184,86 @@ html {
   margin: 0 auto;
 }
 
-
 .ServiceCardImg {
   border: 5px solid #fff;
-  border-radius: 0 3.2rem 0;
+  border-radius:  3.2rem 0 3.2rem;
   width: 18rem;
   height: 24rem;
   margin-top: 3rem;
   overflow: hidden;
   flex-shrink: 0;
+  z-index: 1;
   position: relative;
 }
 
-.priceCard {
-  width: 180px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.cowImgg{
+  position: absolute;
+  z-index: 2;
+
+}
+.sheepImgg{
+  position: absolute;
+  z-index: 2;
+}
+.text {
+  position: relative;
+  top: -80px;
+  z-index: 1;
+}
+.whiteSquar {
+  width: 207px;
+  height: 65px;
   background: #ffffff;
   border-radius: 30px 0px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1rem;
+  background-color: white;
+  z-index: 2;
+  margin: 0 auto;
+  position: relative;
+  top: 74%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .servicesCon {
+    border-radius: 60px 0px;
+    height: auto;
+    padding: 1rem 0 1rem;
+  margin: 1rem;
+  }
+  
+
+  .ServiceCardImg {
+    border: 5px solid #fff;
+    border-radius:  3.2rem 0 3.2rem;
+    width: 10rem;
+    height: 13rem;
+    z-index: 1;
+    position: relative;
+    
+  }
+  
+  .cowImgg, .sheepImgg {
+    width: 20%;
+  }
+  .ServiceCardImg img{
+    width: auto;
+    height: auto;
+  }
+  .whiteSquar {
+    width: 120px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 30px 0px;
+    background-color: white;
+    z-index: 2;
+    margin: 0 auto;
+    position: relative;
+    top: 74%;
+    font-size: .9rem;
+  }
+  
+  .text {
+    top: -3rem;
+  }
 }
