@@ -4,9 +4,9 @@ const ServicesSacrifice = ({img }) => {
   return (
     <div className=" mb-4 hover:cursor-pointer ServiceCardImg bg-white">
     <img
-      className="object-cover"
+      className="object-cover "
       src={`/HomeImages/ServicesImage/${img}`}
-      alt="Cow"
+      alt="AnimalImage"
     />
    
     

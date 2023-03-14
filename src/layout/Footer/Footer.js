@@ -126,7 +126,7 @@ const Footer = () => {
                 <img src={whatsapp1} alt="" className="h-8" />
               </Link>
               <Link>
-                <span className="text-sm">WhatsApp us</span>
+                <span className="text-sm text-white">WhatsApp us</span>
               </Link>
             </div>
           </div>

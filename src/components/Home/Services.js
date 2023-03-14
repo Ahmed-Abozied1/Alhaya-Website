@@ -8,7 +8,7 @@ const Services = () => {
       <header class="mb-2 text-4xl font-bold">
         <div class="relative">
           <img src="/HomeImages/title.png" alt="" />
-          <h1 class="text-2xl w-full absolute text-black font-bold top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/2">
+          <h1 class="text-3xl w-full absolute text-black font-bold top-1/2 left-1/3 transform -translate-x-1/4 -translate-y-1/2">
             Our Services
           </h1>
         </div>
@@ -48,7 +48,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div class="flex flex-col gap-y-3 text-center mt-8 justify-center  items-center  ">
+        <div class="flex flex-col gap-y-3 text-center lg:text-xl  mt-8 justify-center  items-center  ">
           <p class=" text-white">
             If by feeding, 10$ Dollar will be added for the lamb and 50$ for the
             Caw

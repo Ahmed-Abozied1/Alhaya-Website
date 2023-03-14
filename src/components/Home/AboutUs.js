@@ -1,13 +1,18 @@
 import React from "react";
 import AboutUsRow from "../AboutUsRow";
 import AboutUsRowReverse from "../AboutUsRowReverse";
-import Title from "../Title";
 const AboutUs = () => {
   return (
     <div className="my-0 py-0 md:px-20 px-8 bg-dry">
-    <div className="">
-      <Title title="About us "  />
-
+    <div class="flex flex-col justify-center items-center ">
+    <header class="mb-2 mt-12 text-4xl font-bold">
+        <div class="relative">
+          <img src="/HomeImages/title.png" alt="" />
+          <h1 class="text-3xl w-full absolute text-black font-bold top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/2">
+          About Us
+          </h1>
+        </div>
+      </header>
     </div>
 <div className="flex  lg:gap-4 gap-10 flex-col ">
 <AboutUsRow
