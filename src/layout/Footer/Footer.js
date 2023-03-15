@@ -105,17 +105,17 @@ const Footer = () => {
               <li className="flex items-baseline ">
                 <Link className="mr-7">
                   <span>
-                    <img alt="" src={youtube} className="h-10" />
+                    <img alt="" src={youtube} className="lg:h-10" />
                   </span>
                 </Link>
                 <Link className="mr-7">
                   <span>
-                    <img alt="" src={facebook} className="h-10" />
+                    <img alt="" src={facebook} className="lg:h-10" />
                   </span>
                 </Link>
                 <Link className="mr-7">
                   <span>
-                    <img alt="" src={twitter} className="h-10" />
+                    <img alt="" src={twitter} className="lg:h-10 " />
                   </span>
                 </Link>
               </li>

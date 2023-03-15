@@ -8,7 +8,7 @@ const AboutUs = () => {
     <header class="mb-2 mt-12 text-4xl font-bold">
         <div class="relative">
           <img src="/HomeImages/title.png" alt="" />
-          <h1 class="text-3xl w-full absolute text-black font-bold top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/2">
+          <h1 class="lg:text-3xl ml-6 lg:ml-0 text-xl w-full absolute text-black font-bold top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/2">
           About Us
           </h1>
         </div>

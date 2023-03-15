@@ -1,0 +1,28 @@
+.review-card {
+  background-color: #c6e2f3e1;
+  transform: scale(0.4);
+  transition: 0.5s;
+ 
+} 
+
+#review-activeCard {
+  transform: scale(1);
+}
+
+.review-card-img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.img-thumbnail{
+  background: linear-gradient(40deg,#2D7BFA, #62A8FB);
+  border: none;
+}
+
+.review-card-title {
+  font-size: 16px;
+}
+
+.review-card-text {
+  font-size: 13px;
+}
