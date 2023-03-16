@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 
 import facebook from "../../images/facebook.png";
@@ -6,6 +6,8 @@ import twitter from "../../images/twitter.png";
 import whatsapp1 from "../../images/whatsapp 1.png";
 import youtube from "../../images/youtube.png";
 const ImageAndText = () => {
+  const [phoneNumber, setPhoneNumber] = useState("0201068801942");
+
   return (
     <div class="relative  ">
       <img src="HomeImages/1.png" alt="" className="opacity-40" />
@@ -38,9 +40,18 @@ const ImageAndText = () => {
           <Link>
             <img src={whatsapp1} alt="" className="h-8" />
           </Link>
-          <Link>
+          <a
+  className="flex items-center mr-4"
+  href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+             <span className="text-sm text-white">WhatsApp us</span>
+
+</a>
+          {/* <Link>
             <span className="text-sm text-white">WhatsApp us</span>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

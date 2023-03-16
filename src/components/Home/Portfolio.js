@@ -1,6 +1,7 @@
 import React from 'react'
 import ScrollPortfolioImgs from '../ScrollPortfolioImgs'
-import ReviewCarousel from "../review-carousel/ReviewCarousel.jsx"
+import PortfolioImgCard from '../PortfolioImgCard'
+import ScrollImages from '../ScrollImages'
 const Portfolio = () => {
   return (
     <section className='profileSection flex justify-around flex-col items-center'>
@@ -21,8 +22,9 @@ const Portfolio = () => {
           </p>
         </div>
         <div className='flex flex-wrap gap-4'>
-          {/* <PortfolioImgCard img="portfolio1.png"/> */}
-        <ReviewCarousel/>
+    <PortfolioImgCard img="portfolio1.png"/>
+    <PortfolioImgCard img="portfolio2.png"/>
+    <PortfolioImgCard img="portfolio3.png"/>
          
         </div> 
     </section>

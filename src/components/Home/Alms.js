@@ -15,7 +15,7 @@ const Alms = () => {
   };
 
   return (
-    <div class="flex  flex-col justify-center items-center ">
+    <div class="flex left-0 right-0 flex-col justify-center items-center ">
       <header class="mb-2 mt-12 text-4xl font-bold">
         <div class="relative">
           <img src="/HomeImages/title.png" alt="" />
@@ -24,7 +24,7 @@ const Alms = () => {
           </h1>
         </div>
       </header>
-      <div className="relative  w-full flex justify-center items-end bg-navColor h-24">
+      <div className="relative   w-full flex justify-center items-end bg-navColor h-24">
         <p className="absolute flex justify-center items-center mb-4 font-bold text-white">
           Donate a share of Cow with us
         </p>

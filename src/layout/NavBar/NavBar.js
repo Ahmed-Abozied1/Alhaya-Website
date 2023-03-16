@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../../images/footerLogo.png";
 import whatsapp from "../../images/whatsapp 4.png"
+import { useState } from "react";
 const NavBar = () => {
+  const [phoneNumber, setPhoneNumber] = useState("0201068801942");
+
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -67,15 +70,19 @@ const NavBar = () => {
 
         {/* <!-- Icon Menu Section --> */}
         <div className="flex items-center space-x-5 mr-2">
-         <Link className="flex items-center mr-4  ">
-        
-          <img
-                className="h-8  mr-2  object-cover xs:text-6xl md:text-4xl"
-                src={whatsapp}
-                alt="Store Logo"
-              />
-          <p className="font-normal	 ">+(02)01068801942</p>
-         </Link>
+        <a
+  className="flex items-center mr-4"
+  href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img
+    className="h-8 mr-2 object-cover xs:text-6xl md:text-4xl"
+    src={whatsapp}
+    alt="WhatsApp Icon"
+  />
+  <p className="font-normal">+(02)01068801942</p>
+</a>
 
           {/* <!-- Register --> */}
           <Link
