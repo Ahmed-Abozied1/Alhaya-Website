@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+
 import "./NavBar.css";
 import logo from "../../images/footerLogo.png";
-import whatsapp from "../../images/whatsapp 4.png"
+import whatsapp from "../../images/whatsapp 4.png";
 import { useState } from "react";
+import Lantern from "../../components/Lantern/Lantern";
 const NavBar = () => {
-  const [phoneNumber, setPhoneNumber] = useState("0201068801942");
+  const [phoneNumber, setPhoneNumber] = useState("0201021892204");
 
   return (
     <>
@@ -15,23 +18,33 @@ const NavBar = () => {
     backdrop-blur-md shadow-lg  sticky 
      top-0 left-0 right-0 z-20 h-20 "
       >
+    
         {/* <!-- Logo Container --> */}
-       
+
         <div className="flex items-center">
           {/* <!-- Logo --> */}
-          <Link className="cursor-pointer">
-              <img
-                className="h-16  object-cover sm:text-6xl md:text-4xl"
-                src={logo}
-                alt="Store Logo"
-              />
-            
+          <Link className="cursor-pointer"
+           to="home"
+          spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+           >
+            <img
+              className="h-16  object-cover sm:text-6xl md:text-4xl"
+              src={logo}
+              alt="Store Logo"
+            />
           </Link>
         </div>
         {/* <!-- Links Section --> */}
         <div className="items-center hidden space-x-8 lg:flex">
-        
           <Link
+          to="home"
+          spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
             className="flex text-white  hover:hover:text-gray-500
             cursor-pointer transition-colors duration-300 font-normal	"
           >
@@ -42,6 +55,12 @@ const NavBar = () => {
             className="flex text-white hover:text-gray-500
             cursor-pointer transition-colors duration-300
             font-normal	 "
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+
           >
             About us
           </Link>
@@ -49,11 +68,32 @@ const NavBar = () => {
           <Link
             className="flex text-white hover:text-gray-500
             cursor-pointer transition-colors duration-300 font-normal	"
+         to="services"
+         spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             Services
           </Link>
+          <Link
+            className="flex text-white hover:text-gray-500
+            cursor-pointer transition-colors duration-300 font-normal	"
+         to="alms"
+         spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Alms
+          </Link>
 
           <Link
+          to="portfolio"
+          spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
             className="flex text-white hover:text-gray-500
             cursor-pointer transition-colors duration-300 font-normal	"
           >
@@ -61,6 +101,11 @@ const NavBar = () => {
           </Link>
 
           <Link
+          to="faq"
+          spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
             className="flex text-white hover:text-gray-500
             cursor-pointer transition-colors duration-300 font-normal	"
           >
@@ -70,19 +115,19 @@ const NavBar = () => {
 
         {/* <!-- Icon Menu Section --> */}
         <div className="flex items-center space-x-5 mr-2">
-        <a
-  className="flex items-center mr-4"
-  href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img
-    className="h-8 mr-2 object-cover xs:text-6xl md:text-4xl"
-    src={whatsapp}
-    alt="WhatsApp Icon"
-  />
-  <p className="font-normal">+(02)01068801942</p>
-</a>
+          <a
+            className="flex items-center mr-4"
+            href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="h-8 mr-2 object-cover xs:text-6xl md:text-4xl"
+              src={whatsapp}
+              alt="WhatsApp Icon"
+            />
+            <p className="font-normal">+(02)01021892204</p>
+          </a>
 
           {/* <!-- Register --> */}
           <Link
@@ -99,6 +144,7 @@ const NavBar = () => {
           >
             AR
           </Link>
+         
         </div>
       </nav>
     </>

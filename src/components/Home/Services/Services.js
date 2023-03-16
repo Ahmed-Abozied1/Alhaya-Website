@@ -1,10 +1,10 @@
 import React from "react";
-import AboutUsRowChart from "../ServicesRowChart";
-import ServicesSacrifice from "../ServicesSacrifice";
-
+import AboutUsRowChart from "./ServicesRowChart";
+import ServicesSacrifice from "./ServicesSacrifice";
+import "./Services.css"
 const Services = () => {
   return (
-    <div class="flex flex-col justify-center items-center ">
+    <section class="flex mt-10 flex-col justify-center items-center " id="services">
       <header class="mb-2 text-4xl font-bold">
         <div class="relative">
           <img src="/HomeImages/title.png" alt="" className=" "/>
@@ -58,7 +58,7 @@ const Services = () => {
           </p>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 

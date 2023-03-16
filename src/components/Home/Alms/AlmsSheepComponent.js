@@ -6,6 +6,9 @@ const AlmsSheepComponent = () => {
     const [counter, setCounter] = useState(1);
   const increaseCounter = () => {
     setCounter(counter + 1);
+    if (counter > 2) {
+      setCounter(3);
+    }
   };
   const decreaseCounter = () => {
     setCounter(counter - 1);
@@ -14,8 +17,8 @@ const AlmsSheepComponent = () => {
     }
   };
   const handleShareButtonClick = () => {
-    const message = `I want to donate ${counter} shares of Sheep`;
-    const phone = '01068801942';
+    const message = ` I want to donate ${counter} shares of Sheep`;
+    const phone = '+201021892204';
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };

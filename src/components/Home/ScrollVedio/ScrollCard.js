@@ -1,9 +1,10 @@
 import React, { useState,useRef } from "react";
 import ReactPlayer from "react-player";
-
+import "./ScrollVedio.css"
 const ScrollCard = ({ vedio }) => {
   const [playing, setPlaying] = useState(false);
   const playerRef = useRef(null);
+
   const handlePlayButtonClick = () => {
     setPlaying(true);
   };

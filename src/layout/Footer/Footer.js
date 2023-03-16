@@ -13,7 +13,7 @@ import youtube from "../../images/youtube.png";
 import "./Footer.css";
 import { useState } from "react";
 const Footer = () => {
-  const [phoneNumber, setPhoneNumber] = useState("0201068801942");
+  const [phoneNumber, setPhoneNumber] = useState("0201021892204");
 
   const Links = [
     {
@@ -60,8 +60,14 @@ const Footer = () => {
   ];
   return (
     <div className="bg-navColor py-4 bprder=t-2 border-black">
-    <ScrollToTop smooth top="1000" color="#959F87" width="20" className="scroll-to-top"/>
-      <div className="container mx-auto px-2 ">
+      <ScrollToTop
+        smooth
+        top="1000"
+        color="#959F87"
+        width="20"
+        className="scroll-to-top"
+      />
+      <div className=" mx-auto px-2 ">
         <div
           className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between
           "
@@ -131,16 +137,15 @@ const Footer = () => {
               <Link>
                 <img src={whatsapp1} alt="" className="h-8" />
               </Link>
-              
-              <a
-  className="flex items-center mr-4"
-  href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
-  target="_blank"
-  rel="noopener noreferrer"
->
-             <span className="text-sm text-white">WhatsApp us</span>
 
-</a>
+              <a
+                className="flex items-center mr-4"
+                href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-sm text-white">WhatsApp us</span>
+              </a>
             </div>
           </div>
         </div>

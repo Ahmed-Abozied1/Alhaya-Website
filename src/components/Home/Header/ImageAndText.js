@@ -1,15 +1,16 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
 
-import facebook from "../../images/facebook.png";
-import twitter from "../../images/twitter.png";
-import whatsapp1 from "../../images/whatsapp 1.png";
-import youtube from "../../images/youtube.png";
+import facebook from "../../../images/facebook.png";
+import twitter from "../../../images/twitter.png";
+import whatsapp1 from "../../../images/whatsapp 1.png";
+import youtube from "../../../images/youtube.png";
 const ImageAndText = () => {
   const [phoneNumber, setPhoneNumber] = useState("0201068801942");
 
   return (
     <div class="relative  ">
+    
       <img src="HomeImages/1.png" alt="" className="opacity-40" />
       <h1 class="absolute header lg:text-7xl text-4xl w-full      text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
         justice
@@ -36,7 +37,7 @@ const ImageAndText = () => {
             <img src={twitter} alt="" className="h-8" />
           </Link>
         </div>
-        <div className="whatsFooterIcon mt-3 flex items-center justify-around">
+        <div className="whatsFooterIcon mt-3 flex items-center justify-evenly">
           <Link>
             <img src={whatsapp1} alt="" className="h-8" />
           </Link>
@@ -54,6 +55,7 @@ const ImageAndText = () => {
           </Link> */}
         </div>
       </div>
+     
     </div>
   );
 };

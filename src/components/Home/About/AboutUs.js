@@ -1,9 +1,10 @@
 import React from "react";
-import AboutUsRow from "../AboutUsRow";
-import AboutUsRowReverse from "../AboutUsRowReverse";
+import AboutUsRow from "./AboutUsRow";
+import AboutUsRowReverse from "./AboutUsRowReverse";
+import "./About.css"
 const AboutUs = () => {
   return (
-    <div className="my-0 py-0 md:px-20 px-8 bg-dry">
+    <sectio className="my-0 py-0 md:px-20 px-8 bg-dry" id="about">
     <div class="flex flex-col justify-center items-center ">
     <header class="mb-2 mt-12 text-4xl font-bold">
         <div class="relative">
@@ -14,7 +15,7 @@ const AboutUs = () => {
         </div>
       </header>
     </div>
-<div className="flex  lg:gap-4 gap-10 flex-col ">
+<div className="flex ml-4 mr-4  lg:gap-4 gap-10 flex-col ">
 <AboutUsRow
         title="Our Story"
         para="We are a for-profit organization that 
@@ -40,7 +41,7 @@ the privacy of the donor."
       />
 </div>
      
-    </div>
+    </sectio>
   );
 };
 

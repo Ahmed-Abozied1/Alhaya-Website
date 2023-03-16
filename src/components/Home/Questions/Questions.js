@@ -1,9 +1,10 @@
 import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { PlusIcon,MinusIcon } from '@heroicons/react/20/solid'
+import "./Questions.css"
 const Questions = () => {
   return (
-    <section className='questionSection  flex items-center justify-center flex-col relative'>
+    <section id='faq' className=' pb-10  flex items-center justify-center flex-col relative'>
     <img  src="/HomeImages/QusetionImages/topMap.png" className="absolute top-0 right-0 lg:w-64  w-28 " alt="-alt-text" />
     <img  src="/HomeImages/QusetionImages/bottomMap.png" className="absolute bottom-0 left-0 lg:w-64  w-28" alt="-alt-text" />
 

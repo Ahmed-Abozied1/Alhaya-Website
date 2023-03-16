@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import AlmsCowComponent from "../AlmsCowComponent";
-import AlmsSheepComponent from "../AlmsSheepComponent";
-
+import AlmsCowComponent from "./AlmsCowComponent";
+import AlmsSheepComponent from "./AlmsSheepComponent";
+import "./Alms.css"
 const Alms = () => {
   const [showAlmsCowComponent, setAlmsCowComponent] = useState(true);
   
@@ -15,7 +15,7 @@ const Alms = () => {
   };
 
   return (
-    <div class="flex left-0 right-0 flex-col justify-center items-center ">
+    <section id="alms" class="flex  flex-col justify-center items-center ">
       <header class="mb-2 mt-12 text-4xl font-bold">
         <div class="relative">
           <img src="/HomeImages/title.png" alt="" />
@@ -56,7 +56,7 @@ const Alms = () => {
       {/* ** */}
       {showAlmsCowComponent ? <AlmsCowComponent /> : <AlmsSheepComponent />}
 
-    </div>
+    </section>
   );
 };
 

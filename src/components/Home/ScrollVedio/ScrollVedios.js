@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Slider from "react-slick";
-
-import { Vedios } from "../../Data/Vedios";
-import ScrollCards from "../ScrollCard";
+import "./ScrollVedio.css"
+import { Vedios } from "../../../Data/Vedios";
+import ScrollCards from "./ScrollCard";
 
 function ScrollVedios() {
   const [slideIndex, setSlideIndex] = useState(0);

@@ -1,16 +1,19 @@
 
 import React, { useState } from 'react';
-import { toast } from 'react-hot-toast';
 
 const AlmsCowComponent = () => {
   const [counter, setCounter] = useState(1);
   
   const increaseCounter = () => {
     setCounter(counter + 1);
+    if (counter > 7) {
+      setCounter(8);
+    }
   };
   
   const decreaseCounter = () => {
     setCounter(counter - 1);
+
     if (counter <= 1) {
       setCounter(1);
     }
@@ -18,7 +21,7 @@ const AlmsCowComponent = () => {
   
   const handleShareButtonClick = () => {
     const message = ` I want to donate ${counter} shares of Cow`;
-    const phone = '01068801942';
+    const phone = '+201021892204';
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -28,7 +31,7 @@ const AlmsCowComponent = () => {
       <div>
         <div className="flex flex-wrap justify-center ">
           {[...Array(8)].map((_, i) => (
-            <div key={i} className="w-20 h-20 rounded-full bg-navColor m-2 flex items-center justify-center">
+            <div key={i} className={`w-20 h-20 rounded-full bg-navColor  m-2 flex items-center justify-center`}>
               <img src="/HomeImages/cow.png" alt="" />
             </div>
           ))}
@@ -40,7 +43,7 @@ const AlmsCowComponent = () => {
       </div>
 
       <div>
-        <div className="bigCow lg:w-32 lg:h-32 w-28 h-28 bg-navColor  flex items-center justify-center rounded-full">
+        <div className="bigCow lg:w-32 lg:h-32 w-28 h-28 bg- bg-navColor  flex items-center justify-center rounded-full">
           <img
             src={`/HomeImages/cow.png`}
             alt=""

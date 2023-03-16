@@ -1,0 +1,13 @@
+
+.aboutUsImage {
+    width: 486px;
+    height: 536px;
+  }
+  
+  .para {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    color: #000000;
+  }
