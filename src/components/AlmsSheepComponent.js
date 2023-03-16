@@ -13,6 +13,12 @@ const AlmsSheepComponent = () => {
       setCounter(1);
     }
   };
+  const handleShareButtonClick = () => {
+    const message = `I want to donate ${counter} shares of Sheep`;
+    const phone = '01068801942';
+    const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
   return (
     <div className="flex flex-col m-6  AlmsCon   items-center  w-full justify-around text-center">
     <div>
@@ -50,16 +56,16 @@ const AlmsSheepComponent = () => {
       </button>
     </div>
 
-    <button className="btnShare flex flex-row justify-around w-full">
-      <p className="text-black text-sm flex items-center  justify-center mt-2 font-semibold">
-        Donate a share{" "}
-      </p>
-      <img
-        src="/HomeImages/donate.png"
-        className="w-7 h-7 mt-1 flex items-center"
-        alt=""
-      />
-    </button>
+    <button onClick={handleShareButtonClick} className="btnShare flex flex-row justify-around w-full">
+        <p className="text-black text-sm flex items-center justify-center mt-2 font-semibold">
+          Donate {counter} share(s)
+        </p>
+        <img
+          src="/HomeImages/donate.png"
+          className="w-7 h-7 mt-1 flex items-center"
+          alt=""
+        />
+      </button>
   </div>
   )
 }

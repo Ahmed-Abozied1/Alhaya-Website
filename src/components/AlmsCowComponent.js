@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { toast } from 'react-hot-toast';
 
 const AlmsCowComponent = () => {
   const [counter, setCounter] = useState(1);
@@ -16,7 +17,7 @@ const AlmsCowComponent = () => {
   };
   
   const handleShareButtonClick = () => {
-    const message = `I want to donate ${counter} shares`;
+    const message = ` I want to donate ${counter} shares of Cow`;
     const phone = '01068801942';
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
