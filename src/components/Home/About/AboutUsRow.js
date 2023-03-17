@@ -3,7 +3,7 @@ import "./About.css"
 
 const AboutUsRow = ({title,para, imgSrc}) => {
   return (
-<div className="  lg:grid lg:grid-cols-2 lg:gap-10 items-center flex lg:flex-col flex-col-reverse">
+<div className="  lg:grid lg:grid-cols-2 lg:gap-10 items-center flex  lg:flex-col flex-col-reverse">
        
        <div className="flex  lg:gap-4 gap-2 flex-col">
 

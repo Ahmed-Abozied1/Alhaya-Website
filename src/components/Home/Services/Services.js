@@ -14,7 +14,7 @@ const Services = () => {
         </div>
       </header>
 
-      <section class="flex flex-col justify-between items-center servicesCon">
+      <section class="flex p-4 flex-col justify-between items-center servicesCon">
         <div class="flex flex-row mb-4 justify-evenly w-full">
           <AboutUsRowChart img="charity.png" title="charity" class="mr-4" />
           <AboutUsRowChart img="sack.png" title="Feeding" class="mr-4" />
