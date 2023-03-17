@@ -14,6 +14,18 @@ html {
   font-weight: 400;
 }
 
+
+
+
+[dir="rtl"] {
+  font-family: 'Merienda', sans-serif;
+}
+
+
+
+
+
+
 .header {
   font-family: "Merienda", cursive;
   font-family: "Nunito", sans-serif;
@@ -21,7 +33,4 @@ html {
   font-family: "Roboto", sans-serif;
   font-family: "Rozha One", serif;
 }
-
-
-
 

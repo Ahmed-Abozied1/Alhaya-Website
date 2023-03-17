@@ -75,12 +75,17 @@
     justify-content: center;
     margin: 0 auto;
   }
-  /* .vedioImg {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 14rem;
-  } */
+  .cardVedio {
+    border-radius: 0 3.2rem 0;
+    width: 16rem;
+    height: 22rem;
+    padding-bottom: 3rem;
+    /* margin-top: 3rem; */
+    overflow: hidden;
+    margin-top: 3rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
   
   .playBtn {
     background: #959f87;
@@ -88,14 +93,7 @@
     width: 144px;
     height: 52px;
   }
-  .cardVedio {
-    border-radius: 0 3.2rem 0;
-    /* width: 16rem; */
-    /* height: 26rem; */
-    padding-bottom: 3rem;
-    margin-top: 3rem;
-    overflow: hidden;
-  }
+  
   
   @media (max-width: 768px) {
     /* Set the width to 100% and remove the border radius for smaller screens */

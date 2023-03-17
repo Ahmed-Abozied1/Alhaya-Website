@@ -1,7 +1,10 @@
 .headerIcon{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   
-    width: 130px;
-    height: 55px;
+    width: 140px;
+    height: 52px;
     background: #000;
     border-radius: 0px 30px 30px 30px;
     }

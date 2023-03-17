@@ -47,7 +47,7 @@ const ScrollCard = ({ vedio }) => {
         </button>
       </div>
       <div
-          className=" playBtn lg:ml-14 ml-12 lg:px-14 px-14 lg:pt-4 pt-4 flex justify-center"
+          className=" playBtn lg:ml-14 ml-14 lg:px-16 px-14 lg:pt-4 pt-4 flex justify-center"
           onClick={handleStopButtonClick}
           style={{ display: playing ? "flex" : "none" }}
         >

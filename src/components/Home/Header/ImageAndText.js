@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import facebook from "../../../images/facebook.png";
@@ -7,26 +8,35 @@ import whatsapp1 from "../../../images/whatsapp 1.png";
 import youtube from "../../../images/youtube.png";
 const ImageAndText = () => {
   const [phoneNumber, setPhoneNumber] = useState("0201068801942");
+  const { t, i18n } = useTranslation();
 
   return (
     <div class="relative  ">
     
       <img src="HomeImages/1.png" alt="" className="opacity-30 " />
       <h1 class="absolute header  w-full  leading-10    text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        justice
+      {t("header1")}
+
         <br />
-        begins where <br />
-        ineguality <br />
-        ends
+        {t("header2")}
+ <br />
+ {t("header3")}
+ <br />
+ {t("header4")}
+ 
+
       </h1>
 
       <div className=" lg:mb-4 mb-4 gap-4 flex flex-col justify-center   md:text-lg text-sm">
         <p className="text-black font-serif  tex-xl xl:text-base ">
-          Africa Life Foundation
-        </p>
-        <p className="font-bold">Follow us</p>
+        {t("AfricaLifeFoundation")}
 
-        <div className="headerIcon bg-black  flex items-center justify-between">
+          
+        </p>
+        <p className="font-bold"> {t("Followus")}
+</p>
+
+        <div className="headerIcon bg-black  ">
           <Link className=" ml-3">
             <img src={youtube} alt="" className="h-8" />
           </Link>
@@ -47,12 +57,10 @@ const ImageAndText = () => {
   target="_blank"
   rel="noopener noreferrer"
 >
-             <span className="text-sm text-white">WhatsApp us</span>
+             <span className="text-sm text-white">{t("WhatsAppus")}</span>
 
 </a>
-          {/* <Link>
-            <span className="text-sm text-white">WhatsApp us</span>
-          </Link> */}
+         
         </div>
       </div>
      

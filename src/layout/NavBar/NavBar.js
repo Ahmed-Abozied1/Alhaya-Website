@@ -1,35 +1,43 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 
 import "./NavBar.css";
 import logo from "../../images/footerLogo.png";
 import whatsapp from "../../images/whatsapp 4.png";
 import { useState } from "react";
-import Lantern from "../../components/Lantern/Lantern";
+import { useTranslation } from "react-i18next";
 const NavBar = () => {
   const [phoneNumber, setPhoneNumber] = useState("0201021892204");
+  const { t, i18n } = useTranslation();
 
+  const changeToArabic = () => {
+    i18n.changeLanguage("ar");
+  };
+  const changeToEnglish = () => {
+    i18n.changeLanguage("en");
+  };
+  const isRTL = i18n.language === "ar";
   return (
     <>
       {/* <!-- Navbar --> */}
       <nav
-        className="flex justify-around py-4 bg-navColor text-white
+        className={`flex justify-around py-4 bg-navColor text-white
     backdrop-blur-md shadow-lg  sticky 
-     top-0 left-0 right-0 z-20 h-20 "
+     top-0 left-0 right-0 z-20 h-20 `}
+     dir={isRTL ? "rtl" : "ltr"}
       >
-    
         {/* <!-- Logo Container --> */}
 
         <div className="flex items-center">
           {/* <!-- Logo --> */}
-          <Link className="cursor-pointer"
-           to="home"
-          spy={true}
+          <Link
+            className="cursor-pointer"
+            to="home"
+            spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-           >
+          >
             <img
               className="h-16  object-cover sm:text-6xl md:text-4xl"
               src={logo}
@@ -38,17 +46,17 @@ const NavBar = () => {
           </Link>
         </div>
         {/* <!-- Links Section --> */}
-        <div className="items-center hidden space-x-8 lg:flex">
+        <div className={`items-center hidden gap-6 lg:flex `}dir={isRTL ? "rtl" : "ltr"}>
           <Link
-          to="home"
-          spy={true}
+            to="home"
+            spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className="flex text-white  hover:hover:text-gray-500
             cursor-pointer transition-colors duration-300 font-normal	"
           >
-            Home
+            {t("Home")}
           </Link>
 
           <Link
@@ -60,61 +68,61 @@ const NavBar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-
           >
-            About us
+            {t("About us")}
+
           </Link>
 
           <Link
             className="flex text-white hover:text-gray-500
             cursor-pointer transition-colors duration-300 font-normal	"
-         to="services"
-         spy={true}
+            to="services"
+            spy={true}
             smooth={true}
             offset={-70}
             duration={500}
           >
-            Services
+            {t("Services")}
           </Link>
           <Link
             className="flex text-white hover:text-gray-500
             cursor-pointer transition-colors duration-300 font-normal	"
-         to="alms"
-         spy={true}
+            to="alms"
+            spy={true}
             smooth={true}
             offset={-70}
             duration={500}
           >
-            Alms
+            {t("Alms")}
           </Link>
 
           <Link
-          to="portfolio"
-          spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="flex text-white hover:text-gray-500
-            cursor-pointer transition-colors duration-300 font-normal	"
-          >
-            Portfolio
-          </Link>
-
-          <Link
-          to="faq"
-          spy={true}
+            to="portfolio"
+            spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className="flex text-white hover:text-gray-500
             cursor-pointer transition-colors duration-300 font-normal	"
           >
-            FAQ
+            {t("Portfolio")}
+          </Link>
+
+          <Link
+            to="faq"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="flex text-white hover:text-gray-500
+            cursor-pointer transition-colors duration-300 font-normal	"
+          >
+            {t("FAQ")}
           </Link>
         </div>
 
         {/* <!-- Icon Menu Section --> */}
-        <div className="flex items-center space-x-5 mr-2">
+        <div className="flex items-center gap-4 mr-4 " >
           <a
             className="flex items-center mr-4"
             href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
@@ -122,29 +130,32 @@ const NavBar = () => {
             rel="noopener noreferrer"
           >
             <img
-              className="h-8 mr-2 object-cover xs:text-6xl md:text-4xl"
+              className="h-8 mr-2 ml-2  object-cover xs:text-6xl md:text-4xl"
               src={whatsapp}
               alt="WhatsApp Icon"
             />
-            <p className="font-normal">+(02)01021892204</p>
+            <p className="font-normal">{t("number")}</p>
           </a>
 
           {/* <!-- Register --> */}
           <Link
             className="flex text-white  hover:text-gray-500
-            cursor-pointer font-normal	 transition-colors duration-300"
+            cursor-pointer font-normal transition-colors duration-300"
+            onClick={changeToEnglish}
           >
-            EN
+          {t("EN")}
+            
           </Link>
           <div class="h-[30px]  bg-white w-[1px]"></div>
           {/* <!-- Login --> */}
           <Link
+            onClick={changeToArabic}
             className="flex text-white  hover:text-gray-500
             cursor-pointer font-normal	 transition-colors duration-300"
           >
-            AR
+                      {t("AR")}
+
           </Link>
-         
         </div>
       </nav>
     </>

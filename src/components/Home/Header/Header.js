@@ -1,20 +1,28 @@
 import React from "react";
 import "./Header.css";
 import ImageAndText from "./ImageAndText";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { i18n } = useTranslation();
+
+  const isRTL = i18n.language === "ar";
+  const isRLT = i18n.language === "en";
+
+  const imageClass = isRTL ? "" : "order-1 lg:order-2";
+  const textClass = isRLT ? "order-2 lg:order-1" : "";
+
   return (
-    <div id="home" className=" pt-3 md:px-20 px-8 ">
-   
-      <div className=" items-center flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-10  ">
-        <div className="flex lg:gap-10 gap-8 flex-col ">
+    <div id="home" className="pt-3 md:px-20 px-8" >
+      <div className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-10"dir={isRTL ? "rtl" : "ltr"}>
+        <div className={`${textClass} flex lg:gap-10 gap-8 flex-col`}>
           <ImageAndText />
         </div>
-        <div>
+        <div className={`${imageClass}`}>
           <img
             src="/HomeImages/Maskgroup.png"
             alt="HeaderImage"
-            className="w-auto object-contain  "
+            className="w-auto object-contain"
           />
         </div>
       </div>
