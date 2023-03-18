@@ -51,7 +51,7 @@ const Footer = () => {
       links: [
         {
           name: "+201021892204",
-          name_ar: "٠١٢١٨٩٢٢٠٤",
+          name_ar: "٠١٠٢١٨٩٢٢٠٤",
           link: "#",
           icon: whatsapp,
         },
@@ -89,30 +89,33 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="logo"
-                className=" object-contain h-40 flex items-center"
+                className=" object-contain h-40 flex items-center hover:underline"
               />
             </Link>
           </div>
           {Links.map((link, index) => (
             <div
               key={index}
-              className="col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0"
+              className="col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0 "
             >
               <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6 pb-0.5 ">
-                {i18n.language==="en" ? link.title :link.title_ar}
+                {i18n.language === "en" ? link.title : link.title_ar}
               </h3>
               <ul className="text-footerText text-xl	 flex flex-col space-y-3">
                 {link.links.map((text, index) => (
                   <li key={index} className="flex items-baseline">
                     <Link
                       to={text.link}
-                      className="text-footerText inline-block w-full hover:text-submain"
+                      className="text-footerText inline-block w-full hover:text-submain  hover:underline"
                     >
                       <div className="flex " dir={isRTL ? "rtl" : "ltr"}>
-                        <span >
-                          <img alt="" src={text.icon}className="ml-2 mr-2" />
+                        <span>
+                          <img alt="" src={text.icon} className="ml-2 mr-2" />
                         </span>
-                        <p> {i18n.language==="en"? text.name :text.name_ar}</p>
+                        <p>
+                          {" "}
+                          {i18n.language === "en" ? text.name : text.name_ar}
+                        </p>
                       </div>
                     </Link>
                   </li>
@@ -123,21 +126,21 @@ const Footer = () => {
 
           <div className="col-span-1   md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0">
             <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6 pb-0.5 ">
-            {i18n.language==="en"?"  Social Media Links" :"سوشيال ميديا"}
+              {i18n.language === "en" ? "  Social Media Links" : "سوشيال ميديا"}
             </h3>
-            <ul className="text-footerText text-xl" >
+            <ul className="text-footerText text-xl">
               <li className="flex items-baseline " dir={isRTL ? "rtl" : "ltr"}>
                 <Link className="mr-0">
                   <span>
                     <img alt="" src={youtube} className="lg:h-10" />
                   </span>
                 </Link>
-                <Link className="mr-7">
+                <Link className="mr-4 ml-4">
                   <span>
                     <img alt="" src={facebook} className="lg:h-10" />
                   </span>
                 </Link>
-                <Link className="mr-7">
+                <Link className="mr-4">
                   <span>
                     <img alt="" src={twitter} className="lg:h-10 " />
                   </span>
@@ -145,7 +148,10 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="whatsFooterIcon mt-3 flex items-center justify-around" dir={isRTL ? "rtl" : "ltr"}>
+            <div
+              className="whatsFooterIcon mt-3 flex items-center justify-around"
+              dir={isRTL ? "rtl" : "ltr"}
+            >
               <Link>
                 <img src={whatsapp1} alt="" className="h-8" />
               </Link>
@@ -156,7 +162,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-sm text-white">{i18n.language==="en" ?"WhatsApp us" :"تواصل معنا "}</span>
+                <span className="text-sm text-white">
+                  {i18n.language === "en" ? "WhatsApp us" : "تواصل معنا "}
+                </span>
               </a>
             </div>
           </div>
@@ -165,11 +173,9 @@ const Footer = () => {
       <div class="container mx-auto py-4 " dir={isRTL ? "rtl" : "ltr"}>
         <hr class="border-t border-footerText m-4  flex items-center" />
         <p class="text-center text-footerText">
+          <span className="text-white"> © </span>
 
-         <span className="text-white"> © </span>
-        
-        {i18n.language==="en"?" 2023 Alhayah.net":"2023 الحياة.نت"} 
-        
+          {i18n.language === "en" ? " 2023 Alhayah.net" : "2023 الحياة.نت"}
         </p>
       </div>
     </div>

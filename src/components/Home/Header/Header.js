@@ -15,10 +15,10 @@ const Header = () => {
   return (
     <div id="home" className="pt-3 md:px-20 px-8" >
       <div className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-10"dir={isRTL ? "rtl" : "ltr"}>
-        <div className={`${textClass} flex lg:gap-10 gap-8 flex-col`}>
+        <div className={` flex lg:gap-10 gap-8 flex-col`}>
           <ImageAndText />
         </div>
-        <div className={`${imageClass}`}>
+        <div className={``}>
           <img
             src="/HomeImages/Maskgroup.png"
             alt="HeaderImage"

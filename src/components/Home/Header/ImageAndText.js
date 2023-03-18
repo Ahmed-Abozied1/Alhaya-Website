@@ -14,18 +14,16 @@ const ImageAndText = () => {
     <div class="relative  ">
     
       <img src="HomeImages/1.png" alt="" className="opacity-30 " />
-      <h1 class="absolute header  w-full  leading-10    text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
-      {t("header1")}
+      <h1 class="absolute header w-full lg:leading-10 leading-12 text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
+  {t("header1")}
+  <br />
+  {t("header2")}
+  <br />
+  {t("header3")}
+  <br />
+  {t("header4")}
+</h1>
 
-        <br />
-        {t("header2")}
- <br />
- {t("header3")}
- <br />
- {t("header4")}
- 
-
-      </h1>
 
       <div className=" lg:mb-4 mb-4 gap-4 flex flex-col justify-center   md:text-lg text-sm">
         <p className="text-black font-serif  tex-xl xl:text-base ">

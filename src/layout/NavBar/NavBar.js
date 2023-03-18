@@ -130,7 +130,7 @@ const NavBar = () => {
             rel="noopener noreferrer"
           >
             <img
-              className="h-8 mr-2 ml-2  object-cover xs:text-6xl md:text-4xl"
+              className="h-8 mr-1 ml-1  object-cover xs:text-6xl md:text-4xl"
               src={whatsapp}
               alt="WhatsApp Icon"
             />
