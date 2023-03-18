@@ -12,46 +12,58 @@ import whatsapp1 from "../../images/whatsapp 1.png";
 import youtube from "../../images/youtube.png";
 import "./Footer.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
   const [phoneNumber, setPhoneNumber] = useState("0201021892204");
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
 
   const Links = [
     {
       title: "QUICK LINK",
+      title_ar: "الروابط السريعة",
       links: [
         {
           name: "Home",
+          name_ar: "الصفحة الرئيسية",
           link: "#",
         },
         {
           name: "About Us",
+          name_ar: "معلومات عننا",
           link: "#",
         },
         {
           name: "Services",
+          name_ar: "خدماتنا",
           link: "#",
         },
         {
           name: "Portfolio",
+          name_ar: "اعمالنا",
           link: "#",
         },
       ],
     },
     {
       title: "CONTACT",
+      title_ar: "التواصل",
       links: [
         {
           name: "+201021892204",
+          name_ar: "٠١٢١٨٩٢٢٠٤",
           link: "#",
           icon: whatsapp,
         },
         {
           name: "+201068801942",
+          name_ar: "٠١٠٦٨٨٠١٩٤٢",
           link: "#",
           icon: phone,
         },
         {
           name: "Tanzania",
+          name_ar: "تنزانيا",
           link: "#",
           icon: place,
         },
@@ -67,7 +79,7 @@ const Footer = () => {
         width="20"
         className="scroll-to-top"
       />
-      <div className=" mx-auto px-2 ">
+      <div className=" mx-auto px-2  " dir={isRTL ? "rtl" : "ltr"}>
         <div
           className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between
           "
@@ -87,7 +99,7 @@ const Footer = () => {
               className="col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0"
             >
               <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6 pb-0.5 ">
-                {link.title}
+                {i18n.language==="en" ? link.title :link.title_ar}
               </h3>
               <ul className="text-footerText text-xl	 flex flex-col space-y-3">
                 {link.links.map((text, index) => (
@@ -96,11 +108,11 @@ const Footer = () => {
                       to={text.link}
                       className="text-footerText inline-block w-full hover:text-submain"
                     >
-                      <div className="flex ">
-                        <span className="mr-2">
-                          <img alt="" src={text.icon} />
+                      <div className="flex " dir={isRTL ? "rtl" : "ltr"}>
+                        <span >
+                          <img alt="" src={text.icon}className="ml-2 mr-2" />
                         </span>
-                        <p> {text.name}</p>
+                        <p> {i18n.language==="en"? text.name :text.name_ar}</p>
                       </div>
                     </Link>
                   </li>
@@ -111,11 +123,11 @@ const Footer = () => {
 
           <div className="col-span-1   md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0">
             <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6 pb-0.5 ">
-              Social Media Links
+            {i18n.language==="en"?"  Social Media Links" :"سوشيال ميديا"}
             </h3>
-            <ul className="text-footerText text-xl">
-              <li className="flex items-baseline ">
-                <Link className="mr-7">
+            <ul className="text-footerText text-xl" >
+              <li className="flex items-baseline " dir={isRTL ? "rtl" : "ltr"}>
+                <Link className="mr-0">
                   <span>
                     <img alt="" src={youtube} className="lg:h-10" />
                   </span>
@@ -133,7 +145,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="whatsFooterIcon mt-3 flex items-center justify-around">
+            <div className="whatsFooterIcon mt-3 flex items-center justify-around" dir={isRTL ? "rtl" : "ltr"}>
               <Link>
                 <img src={whatsapp1} alt="" className="h-8" />
               </Link>
@@ -144,17 +156,20 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-sm text-white">WhatsApp us</span>
+                <span className="text-sm text-white">{i18n.language==="en" ?"WhatsApp us" :"تواصل معنا "}</span>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container mx-auto py-4 ">
+      <div class="container mx-auto py-4 " dir={isRTL ? "rtl" : "ltr"}>
         <hr class="border-t border-footerText m-4  flex items-center" />
         <p class="text-center text-footerText">
-          Copyright <span className="text-white">©</span> All Rights reserved
-          for Alhayah in Africa
+
+         <span className="text-white"> © </span>
+        
+        {i18n.language==="en"?" 2023 Alhayah.net":"2023 الحياة.نت"} 
+        
         </p>
       </div>
     </div>

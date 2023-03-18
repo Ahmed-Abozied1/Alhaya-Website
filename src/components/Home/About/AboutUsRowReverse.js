@@ -1,7 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import "./About.css"
 
 const AboutUsRowReverse = ({title,para, imgSrc}) => {
+  const { t, i18n } = useTranslation();
+
   return (
 <div className=" lg:grid lg:grid-cols-2 lg:gap-10 items-center">
 <div className="w-full lg:w-auto flex justify-center">

@@ -1,9 +1,12 @@
 import React from 'react'
 
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const AlmsSheepComponent = () => {
     const [counter, setCounter] = useState(1);
+    const { t, i18n } = useTranslation();
+    const isRTL = i18n.language === "ar";
   const increaseCounter = () => {
     setCounter(counter + 1);
     if (counter > 2) {
@@ -45,8 +48,10 @@ const AlmsSheepComponent = () => {
         className=" inset-0 m-auto w-18"
       />
     </div>
+    <p className="font-bold text-xl mb-2">60$</p>
+
     <div className="font-semibold">
-      <p>Share price :20$ </p>
+      <p> {t("SharepriceSheep")}</p>
     </div>
 
     <div className="btnClick flex flex-row justify-around w-full">
@@ -59,9 +64,13 @@ const AlmsSheepComponent = () => {
       </button>
     </div>
 
-    <button onClick={handleShareButtonClick} className="btnShare flex flex-row justify-around w-full">
+    <button onClick={handleShareButtonClick} 
+    className="btnShare flex flex-row justify-around w-full"
+    dir={isRTL ? "rtl" : "ltr"}
+
+    >
         <p className="text-black text-sm flex items-center justify-center mt-2 font-semibold">
-          Donate {counter} share(s)
+        {t("Donate")}  {t("share")}
         </p>
         <img
           src="/HomeImages/donate.png"

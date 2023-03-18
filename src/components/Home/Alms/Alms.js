@@ -3,7 +3,9 @@ import { useState } from "react";
 import AlmsCowComponent from "./AlmsCowComponent";
 import AlmsSheepComponent from "./AlmsSheepComponent";
 import "./Alms.css"
+import { useTranslation } from "react-i18next";
 const Alms = () => {
+  const { t, i18n } = useTranslation();
   const [showAlmsCowComponent, setAlmsCowComponent] = useState(true);
   
   const handleshowAlmsCowComponent = () => {
@@ -20,13 +22,13 @@ const Alms = () => {
         <div class="relative">
           <img src="/HomeImages/title.png" alt="" />
           <h1 class="lg:text-3xl ml-6 lg:ml-0 text-xl w-full absolute text-black font-bold top-1/2 lg:left-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/2">
-           Our Alms
+         {t("OurAlms")}
           </h1>
         </div>
       </header>
       <div className="relative   w-full flex justify-center items-end bg-navColor h-24">
         <p className="absolute flex justify-center items-center mb-4 font-bold text-white">
-          Donate a share of Cow with us
+         {t("Donateashareofwithus")}
         </p>
         <div className="flex justify-center mb-14">
          <button onClick={handleshowAlmsCowComponent}>

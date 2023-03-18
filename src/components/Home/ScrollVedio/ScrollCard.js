@@ -1,9 +1,11 @@
 import React, { useState,useRef } from "react";
+import { useTranslation } from "react-i18next";
 import ReactPlayer from "react-player";
 import "./ScrollVedio.css"
 const ScrollCard = ({ vedio }) => {
   const [playing, setPlaying] = useState(false);
   const playerRef = useRef(null);
+  const { t, i18n } = useTranslation();
 
   const handlePlayButtonClick = () => {
     setPlaying(true);
@@ -30,12 +32,27 @@ const ScrollCard = ({ vedio }) => {
        
       </div>
       <div className="mt-4 justify-center flex flex-col">
-        <div className="font-bold text-xl mb-2 flex justify-center">
-          {vedio.name}
+       {i18n.language ==="ar" ?
+       
+       <div className="font-bold text-xl mb-2 flex justify-center">
+         {vedio.name_ar}
         </div>
+        :
+        <div className="font-bold text-xl mb-2 flex justify-center">
+         {vedio.name}
+        </div>
+       }
+       {i18n.language ==="ar" ?
+       
+       <p className="text-gray-700 text-base flex justify-center">
+          {vedio.tite_ar}
+        </p>
+        :
         <p className="text-gray-700 text-base flex justify-center">
           {vedio.title}
         </p>
+       }
+       
       </div>
       <div className="px-6 pt-4 flex justify-center">
         <button
@@ -43,7 +60,7 @@ const ScrollCard = ({ vedio }) => {
           onClick={handlePlayButtonClick}
           style={{ display: playing ? 'none' : 'block' }}
         >
-          Play
+          {t("playBtn")}
         </button>
       </div>
       <div
@@ -51,7 +68,8 @@ const ScrollCard = ({ vedio }) => {
           onClick={handleStopButtonClick}
           style={{ display: playing ? "flex" : "none" }}
         >
-          Stop
+                    {t("stopBtn")}
+
         </div>
     </div>
   );
