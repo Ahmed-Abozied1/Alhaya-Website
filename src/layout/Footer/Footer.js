@@ -77,7 +77,8 @@ const Footer = () => {
         top="1000"
         color="#959F87"
         width="20"
-        className="scroll-to-top"
+        className="scroll-to-top lg:mr-0 mr-8"
+
       />
       <div className=" mx-auto px-2  " dir={isRTL ? "rtl" : "ltr"}>
         <div
