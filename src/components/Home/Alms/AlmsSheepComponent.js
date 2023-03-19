@@ -20,7 +20,8 @@ const AlmsSheepComponent = () => {
     }
   };
   const handleShareButtonClick = () => {
-    const message = ` I want to donate ${counter} shares of Sheep`;
+    const message = `  I want to donate ${counter} shares of Sheep  اريد التبرع ب ${counter} سهم من الخروف`;
+
     const phone = '+201021892204';
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
