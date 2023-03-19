@@ -20,8 +20,8 @@ const Alms = () => {
     <section id="alms" class="flex  flex-col justify-center items-center ">
      <header class="hd mb-2 mt-12 text-4xl font-bold flex justify-between w-full">
   <div class="relative">
-    <img src="/HomeImages/title.png" alt="" className="almsImgtitle"/>
-    <h1 class="lg:text-3xl ml-6 lg:ml-0 text-xl w-full absolute text-black font-bold top-1/2 lg:left-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/2">
+    <img src="/HomeImages/title.png" alt="" />
+    <h1 class="lg:text-3xl ml-9 lg:ml-4 text-xl  absolute text-black font-bold top-1/2 lg:left-1/3 left-1/3 transform -translate-x-1/4 -translate-y-1/2">
       {t("OurAlms")}
     </h1>
   </div>

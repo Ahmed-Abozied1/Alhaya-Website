@@ -12,12 +12,12 @@ const Services = () => {
       <header class="mb-2 text-4xl font-bold">
         <div class="relative">
           <img src="/HomeImages/title.png" alt="" className=" "/>
-          <h1 class=" lg:text-3xl ml-2  lg:ml-5 text-xl w-full absolute text-black font-bold top-1/2 lg:left-1/3 left-1/2 transform -translate-x-1/4 -translate-y-1/2">
+          <h1 class="lg:text-3xl text-2xl ml-12 lg:ml-6  absolute text-black font-bold top-1/2 lg:left-1/3 left-1/4 transform -translate-x-1/4 -translate-y-1/2 whitespace-nowrap"
+          >
           {t("OurServices")}
           </h1>
         </div>
       </header>
-
       <section class="flex p-4 flex-col justify-between items-center servicesCon">
         <div class="flex flex-row mb-4 justify-evenly w-full" dir={isRTL ? "rtl" : "ltr"}>
           <AboutUsRowChart img="charity.png" title="charity" title_ar="الصدقة" class="mr-4" />

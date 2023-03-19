@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -11,28 +11,25 @@ const ImageAndText = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div class="relative  ">
-    
+    <div class="relative">
+      <div className="">
       <img src="HomeImages/1.png" alt="" className="opacity-30 " />
-      <h1 class="absolute header w-full lg:leading-10 leading-12 text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
-  {t("header1")}
-  <br />
-  {t("header2")}
-  <br />
-  {t("header3")}
-  <br />
-  {t("header4")}
-</h1>
-
+      <h1 class="absolute  flex header w-full lg:leading-10 leading-12 text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        {t("header1")}
+        <br />
+        {t("header2")}
+        <br />
+        {t("header3")}
+        <br />
+        {t("header4")}
+      </h1>
+      </div>
 
       <div className=" lg:mb-4 mb-4 gap-4 flex flex-col justify-center   md:text-lg text-sm">
-        <p className="text-black font-serif  tex-xl xl:text-base ">
-        {t("AfricaLifeFoundation")}
-
-          
+        <p className="text-black font-serif  lg:tex-4xl text-2xl  ">
+          {t("AfricaLifeFoundation")}
         </p>
-        <p className="font-bold"> {t("Followus")}
-</p>
+        <p className="font-bold lg:tex-4xl text-xl "> {t("Followus")}</p>
 
         <div className="headerIcon bg-black  ">
           <Link className=" ml-3">
@@ -50,18 +47,15 @@ const ImageAndText = () => {
             <img src={whatsapp1} alt="" className="h-8" />
           </Link>
           <a
-  className="flex items-center mr-4"
-  href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
-  target="_blank"
-  rel="noopener noreferrer"
->
-             <span className="text-sm text-white">{t("WhatsAppus")}</span>
-
-</a>
-         
+            className="flex items-center mr-4"
+            href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-sm text-white">{t("WhatsAppus")}</span>
+          </a>
         </div>
       </div>
-     
     </div>
   );
 };
