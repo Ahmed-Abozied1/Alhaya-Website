@@ -18,12 +18,12 @@ const Portfolio = () => {
           </h1>
         </div>
       </header>
-      <div class="flex flex-col gap-y-3 text-center lg:text-xl  mt-8 justify-center  items-center  ">
+      <div class="flex flex-col gap-y-3 text-center lg:text-xl  mt-8  justify-center  items-center  ">
         <p class=" text-white">
 {t("PortofolioPara1")}        </p>
         <p class=" text-white">{t("PortofolioPara2")}</p>
       </div>
-      <div className="flex  gap-4 pt-12">
+      <div className="flex  gap-4 pt-12 lg:ml-0 ml-6 lg:mr-0 mr-6">
         <PortfolioImgCard img="portfolio1.png" />
         <PortfolioImgCard img="portfolio2.png" />
         <PortfolioImgCard img="portfolio3.png" />

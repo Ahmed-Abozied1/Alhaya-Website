@@ -86,4 +86,17 @@
     top: -3rem;
   }
 }
+@media (max-width: 780px) {
+  .whiteSquar {
+    width: 140px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 20px 0px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    top: 74%;
+    font-size: 0.8rem;
+  }
+ }
 
