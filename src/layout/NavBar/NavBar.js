@@ -130,7 +130,7 @@ const NavBar = () => {
         </div>
 
         {/* <!-- Icon Menu Section --> */}
-        <div className="flex items-center gap-4 mr-4 " >
+        <div className="flex items-center gap-4 lg:mr-4 mr-1 " >
           <a
             className="flex items-center mr-4"
             href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
@@ -142,7 +142,7 @@ const NavBar = () => {
               src={whatsapp}
               alt="WhatsApp Icon"
             />
-            <p className="font-normal">{t("number")}</p>
+            <p className="font-normal lg:text-2xl text-sm">{t("number")}</p>
           </a>
 
           {/* <!-- Register --> */}
