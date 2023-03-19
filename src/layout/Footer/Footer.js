@@ -173,7 +173,7 @@ const Footer = () => {
       <div class="container mx-auto py-4 " dir={isRTL ? "rtl" : "ltr"}>
         <hr class="border-t border-footerText m-4  flex items-center" />
         <p class="text-center text-footerText">
-          <span className="text-white"> © </span>
+          <span className="text-white text-xl"> © </span>
 
           {i18n.language === "en" ? " 2023 Alhayah.net" : "2023 الحياة.نت"}
         </p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 
 import "./NavBar.css";
@@ -9,12 +9,20 @@ import { useTranslation } from "react-i18next";
 const NavBar = () => {
   const [phoneNumber, setPhoneNumber] = useState("0201021892204");
   const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState("ar");
 
+  useEffect(() => {
+    const body = document.getElementsByTagName("body")[0];
+    body.style.fontFamily = language === "ar" ? "El Messiri" : "Merienda";
+    body.setAttribute("lang", language);
+  }, [language]);
   const changeToArabic = () => {
     i18n.changeLanguage("ar");
+    setLanguage("ar");
   };
   const changeToEnglish = () => {
     i18n.changeLanguage("en");
+    setLanguage("en");
   };
   const isRTL = i18n.language === "ar";
   return (
