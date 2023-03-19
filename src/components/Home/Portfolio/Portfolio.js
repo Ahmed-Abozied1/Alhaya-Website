@@ -23,7 +23,7 @@ const Portfolio = () => {
 {t("PortofolioPara1")}        </p>
         <p class=" text-white">{t("PortofolioPara2")}</p>
       </div>
-      <div className="flex  gap-4 pt-12 lg:ml-0 ml-6 lg:mr-0 mr-6">
+      <div className="flex w-full justify-center  gap-4 pt-12 imgscroll">
         <PortfolioImgCard img="portfolio1.png" />
         <PortfolioImgCard img="portfolio2.png" />
         <PortfolioImgCard img="portfolio3.png" />

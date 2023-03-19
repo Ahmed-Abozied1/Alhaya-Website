@@ -6,6 +6,7 @@ import facebook from "../../../images/facebook.png";
 import twitter from "../../../images/twitter.png";
 import whatsapp1 from "../../../images/whatsapp 1.png";
 import youtube from "../../../images/youtube.png";
+import {BsSnapchat} from "react-icons/bs"
 const ImageAndText = () => {
   const [phoneNumber, setPhoneNumber] = useState("0201068801942");
   const { t, i18n } = useTranslation();
@@ -39,7 +40,8 @@ const ImageAndText = () => {
             <img src={facebook} alt="" className="h-8" />
           </Link>
           <Link className=" mr-3">
-            <img src={twitter} alt="" className="h-8" />
+            {/* <img src={twitter} alt="" className="h-8" /> */}
+<BsSnapchat className="text-white text-3xl"/>
           </Link>
         </div>
         <div className="whatsFooterIcon mt-3 flex items-center justify-evenly">
@@ -47,7 +49,7 @@ const ImageAndText = () => {
             <img src={whatsapp1} alt="" className="h-8" />
           </Link>
           <a
-            className="flex items-center mr-4"
+            className="flex items-center "
             href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
             target="_blank"
             rel="noopener noreferrer"

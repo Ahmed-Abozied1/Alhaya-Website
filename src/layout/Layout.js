@@ -5,7 +5,7 @@ import NavBar from './NavBar/NavBar'
 const Layout = ({children}) => {
   return (
     <>
-    <div className='bg-white text-black'>
+    <div className=' text-black'>
         <NavBar/>
         {children}
         <Footer/>

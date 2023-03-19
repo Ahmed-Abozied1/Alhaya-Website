@@ -1,16 +1,46 @@
 
 .whatsFooterIcon{
   
-width: 150px;
+width: 166px;
 height: 55px;
 
 background: #64B161;
 border-radius: 0px 30px 30px 30px;
 }
-.scroll-to-top {
 
+ 
+  
+  
+  .scroll-to-top {
     display:  flex;
     justify-content: center;
     align-items: center;
-  
+    background-color: #fff;
+    color: white;
+    transition: background-color 0.2s, color 0.2s;
   }
+  
+  .scroll-to-top:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .scroll-to-top.active {
+    animation: scroll-top 0.5s forwards;
+  }
+  
+  @keyframes scroll-top {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  

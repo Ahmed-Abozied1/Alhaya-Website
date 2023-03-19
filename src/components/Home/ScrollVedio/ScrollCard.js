@@ -19,7 +19,7 @@ const ScrollCard = ({ vedio }) => {
     playerRef.current.seekTo(0);
   };
   return (
-    <div className="mb-4 hover:cursor-pointer cardVedio bg-white">
+    <div className="mb-4 hover:cursor-pointer cardVedio   bg-white">
       <div className="vedioImg">
         <ReactPlayer
           url={vedio.link}
@@ -54,7 +54,7 @@ const ScrollCard = ({ vedio }) => {
        }
        
       </div>
-      <div className="px-6 pt-4 flex justify-center">
+      {/* <div className="px-6 pt-4 flex justify-center">
         <button
           className="bg-navColor playBtn"
           onClick={handlePlayButtonClick}
@@ -70,7 +70,7 @@ const ScrollCard = ({ vedio }) => {
         >
                     {t("stopBtn")}
 
-        </div>
+        </div> */}
     </div>
   );
 };

@@ -32,7 +32,7 @@ const NavBar = () => {
         className={`flex justify-around py-4 bg-navColor text-white
     backdrop-blur-md shadow-lg  sticky 
      top-0 left-0 right-0 z-20 h-20 `}
-     dir={isRTL ? "rtl" : "ltr"}
+        dir={isRTL ? "rtl" : "ltr"}
       >
         {/* <!-- Logo Container --> */}
 
@@ -54,7 +54,10 @@ const NavBar = () => {
           </Link>
         </div>
         {/* <!-- Links Section --> */}
-        <div className={`items-center hidden gap-6 lg:flex `}dir={isRTL ? "rtl" : "ltr"}>
+        <div
+          className={`items-center hidden gap-6 lg:flex `}
+          dir={isRTL ? "rtl" : "ltr"}
+        >
           <Link
             to="home"
             spy={true}
@@ -78,7 +81,6 @@ const NavBar = () => {
             duration={500}
           >
             {t("About us")}
-
           </Link>
 
           <Link
@@ -137,12 +139,14 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+         
             <img
               className="h-8 mr-1 ml-1  object-cover xs:text-6xl md:text-4xl"
               src={whatsapp}
               alt="WhatsApp Icon"
             />
             <p className="font-normal lg:text-2xl text-sm">{t("number")}</p>
+         
           </a>
 
           {/* <!-- Register --> */}
@@ -151,8 +155,7 @@ const NavBar = () => {
             cursor-pointer font-normal transition-colors duration-300"
             onClick={changeToEnglish}
           >
-          {t("EN")}
-            
+            {t("EN")}
           </Link>
           <div class="h-[30px]  bg-white w-[1px]"></div>
           {/* <!-- Login --> */}
@@ -161,8 +164,7 @@ const NavBar = () => {
             className="flex text-white  hover:text-gray-500
             cursor-pointer font-normal lg:mr-0 mr-2	 transition-colors duration-300"
           >
-                      {t("AR")}
-
+            {t("AR")}
           </Link>
         </div>
       </nav>

@@ -8,18 +8,14 @@
   .imgCard{
     border: 4px solid white;
   }
-  
+  .imgscroll{
+    margin-left: 0;
+    margin-right: 0;
+  }
   
   @media (max-width: 780px) {
-    .whiteSquar {
-      width: 140px;
-      height: 40px;
-      background: #ffffff;
-      border-radius: 20px 0px;
-      background-color: white;
-      z-index: 2;
-      position: relative;
-      top: 74%;
-      font-size: 0.8rem;
+    .imgscroll{
+      margin-left: 1.5rem;
+      margin-right: .5rem;
     }
    }
