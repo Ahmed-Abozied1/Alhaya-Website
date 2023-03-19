@@ -8,7 +8,7 @@ const Services = () => {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section class="flex mt-10 flex-col justify-center items-center " id="services">
+    <section class="flex mt-10 flex-col justify-center items-center  " id="services">
       <header class="mb-2 text-4xl font-bold">
         <div class="relative">
           <img src="/HomeImages/title.png" alt="" className=" "/>
@@ -18,7 +18,7 @@ const Services = () => {
           </h1>
         </div>
       </header>
-      <section class="flex p-4 flex-col justify-between items-center servicesCon">
+      <section class=" flex p-4 flex-col justify-between items-center servicesCon">
         <div class="flex flex-row mb-4 justify-evenly w-full" dir={isRTL ? "rtl" : "ltr"}>
           <AboutUsRowChart img="charity.png" title="charity" title_ar="الصدقة" class="mr-4" />
           <AboutUsRowChart img="sack.png" title="Feeding" title_ar="الاطعام" class="mr-4" />
