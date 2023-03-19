@@ -9,6 +9,7 @@ function ScrollVedios() {
 
   const settings = {
     infinite: true,
+    dots: true, // Show dots for navigation
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -18,7 +19,9 @@ function ScrollVedios() {
     centerMode: true,
     arrows: false,
     customPaging: (current, next) => (
-      <div className={current === slideIndex ? "dot dot-active" : "dot"}></div>
+      <div className="slick-dots">
+        <div className={current === slideIndex ? "dot dot-active" : "dot"}></div>
+      </div>
     ),
     responsive: [
       {

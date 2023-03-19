@@ -1,23 +1,23 @@
-import React, { useState,useRef } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ReactPlayer from "react-player";
 import "./ScrollVedio.css"
 const ScrollCard = ({ vedio }) => {
   const [playing, setPlaying] = useState(false);
-  const playerRef = useRef(null);
+  // const playerRef = useRef(null);
   const { t, i18n } = useTranslation();
 
-  const handlePlayButtonClick = () => {
-    setPlaying(true);
-  };
+  // const handlePlayButtonClick = () => {
+  //   setPlaying(true);
+  // };
   const handleVideoEnded = () => {
     setPlaying(false);
   };
 
-  const handleStopButtonClick = () => {
-    setPlaying(false);
-    playerRef.current.seekTo(0);
-  };
+  // const handleStopButtonClick = () => {
+  //   setPlaying(false);
+  //   playerRef.current.seekTo(0);
+  // };
   return (
     <div className="mb-4 hover:cursor-pointer cardVedio   bg-white">
       <div className="vedioImg">

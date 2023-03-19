@@ -1,121 +1,131 @@
 .scrollVedios {
-    margin: 0 175px 0 175px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: #959f87;
-    border: 5px solid #959f87;
-    border-radius: 100px 0px;
+  margin: 0 175px 0 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #959f87;
+  border: 5px solid #959f87;
+  border-radius: 100px 0px;
+}
+
+.slider {
+  width: 100%;
+  height: 200px;
+}
+.headerr {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 80px;
+}
+
+.slide,
+.slide img {
+  width: 100%;
+  height: 350px;
+}
+.slide {
+  /* opacity: .5; */
+  transform: scale(0.7);
+  transition: 0.5s;
+  /* filter: blur(5px); */
+}
+
+.slide-active {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.for-slick-slider {
+  display: flex;
+}
+.for-slick-slider .items {
+  width: 350px;
+  height: 250px;
+  margin: 50px;
+}
+
+.for-slick-slider .items img {
+  width: 350px;
+  height: 250px;
+}
+/* ScrollVedio Section********/
+.con {
+  /* width: 1092px; */
+  width: 100%;
+  max-width: 1120px;
+  height: 450px;
+  overflow: hidden;
+  background: #959f87;
+  border-radius: 100px 0px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cardVedio {
+  border-radius: 0 3.2rem 0;
+  width: 16rem;
+  /* height: 22rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  /* margin-top: 3rem; */
+  overflow: hidden;
+  margin-top: 3rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.playBtn {
+  background: #959f87;
+  border-radius: 0px 30px 30px 30px;
+  width: 144px;
+  height: 52px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 48px;
   }
- 
-  
-  .slider {
-    width: 100%;
-    height: 200px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 7vw;
   }
-  .headerr {
-    margin: 50px auto;
-    text-align: center;
-    font-size: 80px;
-  }
-  
-  .slide,
-  .slide img {
-    width: 100%;
-    height: 350px;
-  }
-  .slide {
-    /* opacity: .5; */
-    transform: scale(0.7);
-    transition: 0.5s;
-    /* filter: blur(5px); */
-  }
-  
-  .slide-active {
-    filter: blur(0);
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  
- 
-  .for-slick-slider {
-    display: flex;
-  }
-  .for-slick-slider .items {
-    width: 350px;
-    height: 250px;
-    margin: 50px;
-  }
-  
-  .for-slick-slider .items img {
-    width: 350px;
-    height: 250px;
-  }
-  /* ScrollVedio Section********/
+}
+@media (max-width: 768px) {
+  /* Set the width to 100% and remove the border radius for smaller screens */
   .con {
-    /* width: 1092px; */
     width: 100%;
-    max-width: 1120px;
-    height:450px;
-    overflow: hidden;
-    background: #959f87;
     border-radius: 100px 0px;
+    height: 500px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
   }
   .cardVedio {
-    border-radius: 0 3.2rem 0;
-    width: 16rem;
-    /* height: 22rem; */
+    width: 100%;
+    max-width: 18rem;
+    height: 17rem;
     display: flex;
     flex-direction: column;
-justify-content: space-between;
-    padding-bottom: 3rem;
-    /* margin-top: 3rem; */
-    overflow: hidden;
-    margin-top: 3rem;
-    overflow: hidden;
-    flex-shrink: 0;
+    justify-content: space-between;
+    border-radius: 0 3.2rem 0;
+    margin-left: auto; /* Remove left margin */
+    margin-right: auto; /* Remove right margin */
+    width: 80%;
   }
-  
-  .playBtn {
-    background: #959f87;
-    border-radius: 0px 30px 30px 30px;
-    width: 144px;
-    height: 52px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .header {
-      font-size: 48px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .header {
-      font-size: 7vw;
-    }
-  }
-  @media (max-width: 768px) {
-    /* Set the width to 100% and remove the border radius for smaller screens */
-    .con {
-      width: 100%;
-      border-radius: 100px 0px;
-      height: 500px;
-      display: flex;
-      justify-content: center;
-    }
-    .cardVedio {
-      width: 100%;
-      max-width: 18rem;
-      height: 17rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: 0 3.2rem 0;
-      margin-left: auto; /* Remove left margin */
-      margin-right: auto; /* Remove right margin */
-      width: 80%;
-    }
-  }
+}
+
+.dot {
+  background-color: #222;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 5px;
+  width: 10px;
+}
+
+.dot-active {
+  background-color: #fff;
+}
