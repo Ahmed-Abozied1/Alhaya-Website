@@ -52,7 +52,7 @@ const ImageAndText = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-sm text-white">{t("WhatsAppus")}</span>
+            <span className="text-sm font-bold text-white">{t("WhatsAppus")}</span>
           </a>
         </div>
       </div>

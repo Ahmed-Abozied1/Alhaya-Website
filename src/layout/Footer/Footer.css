@@ -20,7 +20,8 @@ border-radius: 0px 30px 30px 30px;
     color: white;
     transition: background-color 0.2s, color 0.2s;
   }
-  
+ 
+ 
   .scroll-to-top:hover {
     background-color: black;
     color: white;

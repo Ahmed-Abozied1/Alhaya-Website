@@ -52,13 +52,13 @@ const Footer = () => {
       links: [
         {
           name: "+201021892204",
-          name_ar: "٠١٠٢١٨٩٢٢٠٤",
+          name_ar: "201021892204+",
           link: "#",
           icon: whatsapp,
         },
         {
           name: "+201068801942",
-          name_ar: "٠١٠٦٨٨٠١٩٤٢",
+          name_ar: "201068801942+",
           link: "#",
           icon: phone,
         },
@@ -164,7 +164,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-sm text-white">
+                <span className="text-sm font-bold text-white">
                   {i18n.language === "en" ? "WhatsApp us" : "تواصل معنا "}
                 </span>
               </a>
@@ -172,12 +172,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="container mx-auto py-4 " dir={isRTL ? "rtl" : "ltr"}>
+      <div class="  py-4 " dir={isRTL ? "rtl" : "ltr"}>
         <hr class="border-t border-footerText m-4  flex items-center" />
         <p class="text-center text-footerText">
-          <span className="text-white text-xl"> © </span>
+          {i18n.language === "en" ? " Copyright" : "حقوق النشر"} 
+          <span className="text-white text-xl  "> © </span>
 
-          {i18n.language === "en" ? " 2023 Alhayah.net" : "2023 الحياة.نت"}
+          {i18n.language === "en" ? " All Rights reserved for Alhayah in Africa" : " جميع الحقوق محفوظه لدي الحياه بإفريقيا"}
+       
         </p>
       </div>
     </div>
