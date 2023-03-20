@@ -12,6 +12,7 @@ border-radius: 0px 30px 30px 30px;
   
   
   .scroll-to-top {
+    z-index: 100;
     display:  flex;
     justify-content: center;
     align-items: center;
