@@ -25,9 +25,7 @@ const Alms = () => {
       {t("OurAlms")}
     </h1>
   </div>
-  {/* <div >
-    <img className="hdImg" src="/HomeImages/RC.jpg" alt="" />
-  </div> */}
+
 </header>
 
       <div className="relative   w-full flex justify-center items-end bg-navColor h-24">
@@ -36,7 +34,7 @@ const Alms = () => {
         </p>
         <div className="flex justify-center mb-14">
          <button onClick={handleshowAlmsCowComponent}>
-         <div className="w-24  h-24 bg-main relative rounded-full border-4 border-navColor">
+         <div className="w-24  h-24 bg-main relative rounded-full border-4 border-navColor hover:border-dashed">
             <img
               src="/HomeImages/cow.png"
               alt=""
@@ -46,7 +44,7 @@ const Alms = () => {
          </button>
           <div class="border-2 border-white h-22 ml-4 mr-4"></div>
          <button onClick={handleshowAlmsSheepComponent}> 
-         <div className="w-24 bg-main h-24 relative rounded-full border-4 border-white">
+         <div className="w-24 bg-main h-24 relative rounded-full border-4 border-white hover:border-dashed">
             <img
               src="/HomeImages/sheep.png"
               alt=""
