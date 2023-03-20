@@ -134,7 +134,7 @@ const NavBar = () => {
         {/* <!-- Icon Menu Section --> */}
         <div className="flex items-center gap-4 lg:mr-4 mr-1 " >
           <a
-            className="flex items-center mr-4"
+            className="flex items-center mr-2"
             href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
             target="_blank"
             rel="noopener noreferrer"
