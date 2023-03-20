@@ -162,7 +162,7 @@ const NavBar = () => {
           <Link
             onClick={changeToArabic}
             className="flex text-white  hover:text-gray-500
-            cursor-pointer font-normal lg:mr-0 mr-2	 transition-colors duration-300"
+            cursor-pointer font-normal lg:mr-0 mr-2	lg:ml-0 ml-2 transition-colors duration-300"
           >
             {t("AR")}
           </Link>
