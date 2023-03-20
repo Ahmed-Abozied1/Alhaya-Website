@@ -24,6 +24,7 @@ const Header = () => {
             alt="HeaderImage"
             className="w-auto object-contain"
           />
+          
         </div>
       </div>
     </div>

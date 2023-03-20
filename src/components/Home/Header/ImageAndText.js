@@ -3,8 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import facebook from "../../../images/facebook.png";
-import twitter from "../../../images/twitter.png";
-import whatsapp1 from "../../../images/whatsapp 1.png";
+import whatsapp1 from "../../../images/whatsapp 4.png";
 import youtube from "../../../images/youtube.png";
 import {BsSnapchat} from "react-icons/bs"
 const ImageAndText = () => {
@@ -13,7 +12,7 @@ const ImageAndText = () => {
 
   return (
     <div class="relative">
-      <div className="">
+      <div>
       <img src="HomeImages/1.png" alt="" className="opacity-30 " />
       <h1 class="absolute  flex header w-full lg:leading-10 leading-12 text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
         {t("header1")}
@@ -40,7 +39,6 @@ const ImageAndText = () => {
             <img src={facebook} alt="" className="h-8" />
           </Link>
           <Link className=" mr-3">
-            {/* <img src={twitter} alt="" className="h-8" /> */}
 <BsSnapchat className="text-white text-3xl"/>
           </Link>
         </div>

@@ -41,7 +41,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "uglifyjs src/index.js -o dist/index.min.js"
+
   },
   "eslintConfig": {
     "extends": [
@@ -62,6 +64,7 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "uglify-js": "^3.17.4"
   }
 }

@@ -7,10 +7,11 @@ import whatsapp from "../../images/footerwhatsapp.png";
 import phone from "../../images/phone.png";
 import place from "../../images/place.png";
 import facebook from "../../images/facebook.png";
-import twitter from "../../images/twitter.png";
-import whatsapp1 from "../../images/whatsapp 1.png";
+import whatsapp1 from "../../images/whatsapp 4.png";
 import youtube from "../../images/youtube.png";
 import "./Footer.css";
+import {BsSnapchat} from "react-icons/bs"
+
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 const Footer = () => {
@@ -71,7 +72,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-navColor py-4 bprder=t-2 border-black">
+    <div className="bg-navColor py-4 bprder=t-2 ">
       <ScrollToTop
         smooth
         top="1000"
@@ -80,7 +81,7 @@ const Footer = () => {
         className="scroll-to-top lg:mr-0 mr-8"
 
       />
-      <div className=" mx-auto px-2  " dir={isRTL ? "rtl" : "ltr"}>
+      <div className="container mx-auto px-2  " dir={isRTL ? "rtl" : "ltr"}>
         <div
           className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between
           "
@@ -99,22 +100,24 @@ const Footer = () => {
               key={index}
               className="col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0 "
             >
-              <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6 pb-0.5 ">
+              <h3 className="text-footerText  text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
                 {i18n.language === "en" ? link.title : link.title_ar}
               </h3>
+            
               <ul className="text-footerText text-xl	 flex flex-col space-y-3">
                 {link.links.map((text, index) => (
-                  <li key={index} className="flex items-baseline">
+                  <li key={index} >
                     <Link
                       to={text.link}
-                      className="text-footerText inline-block w-full hover:text-submain  hover:underline"
+                      className="text-footerText   hover:text-submain  hover:underline"
                     >
                       <div className="flex " dir={isRTL ? "rtl" : "ltr"}>
                         <span>
-                          <img alt="" src={text.icon} className="ml-2 mr-2" />
+                        
+                          <img alt="" src={text.icon}  />
                         </span>
-                        <p>
-                          {" "}
+                        <p className="pl-2 pr-2">
+                         
                           {i18n.language === "en" ? text.name : text.name_ar}
                         </p>
                       </div>
@@ -126,7 +129,7 @@ const Footer = () => {
           ))}
 
           <div className="col-span-1   md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0">
-            <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6 pb-0.5 ">
+            <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
               {i18n.language === "en" ? "  Social Media Links" : "سوشيال ميديا"}
             </h3>
             <ul className="text-footerText text-xl">
@@ -141,11 +144,9 @@ const Footer = () => {
                     <img alt="" src={facebook} className="lg:h-10" />
                   </span>
                 </Link>
-                <Link className="mr-4">
-                  <span>
-                    <img alt="" src={twitter} className="lg:h-10 " />
-                  </span>
-                </Link>
+                <Link className=" mr-3">
+<BsSnapchat className="text-white text-4xl"/>
+          </Link>
               </li>
             </ul>
 
