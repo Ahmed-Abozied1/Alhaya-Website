@@ -28,6 +28,7 @@ const Portfolio = () => {
         <PortfolioImgCard img="portfolio1.png" />
         <PortfolioImgCard img="portfolio2.png" />
         <PortfolioImgCard img="portfolio3.png" />
+       
       </div>
     </section>
   );
