@@ -1,30 +1,30 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import  LanguageDetector from "i18next-browser-languagedetector";
+import LanguageDetector from "i18next-browser-languagedetector";
 import translationEN from "./local/en.json";
 import translationAR from "./local/ar.json";
 const resources = {
   en: {
-    translation:translationEN
+    translation: translationEN,
   },
   ar: {
-    translation:translationAR
-  }
+    translation: translationAR,
+  },
 };
 
 i18n
-.use(LanguageDetector)
-  .use(initReactI18next) 
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     resources,
-    lng: "ar", 
-  
+    lng: "ar",
+
     interpolation: {
-      escapeValue: false 
+      escapeValue: false,
     },
-    react:{
-        useSuspense:false,
-    }
+    react: {
+      useSuspense: false,
+    },
   });
 
-  export default i18n;
+export default i18n;

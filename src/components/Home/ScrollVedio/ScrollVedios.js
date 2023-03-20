@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Slider from "react-slick";
-import "./ScrollVedio.css"
+import "./ScrollVedio.css";
 import { Vedios } from "../../../Data/Vedios";
 import ScrollCards from "./ScrollCard";
 
@@ -9,7 +9,7 @@ function ScrollVedios() {
 
   const settings = {
     infinite: true,
-    dots: true, // Show dots for navigation
+    dots: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -20,7 +20,9 @@ function ScrollVedios() {
     arrows: false,
     customPaging: (current, next) => (
       <div className="slick-dots">
-        <div className={current === slideIndex ? "dot dot-active" : "dot"}></div>
+        <div
+          className={current === slideIndex ? "dot dot-active" : "dot"}
+        ></div>
       </div>
     ),
     responsive: [
@@ -30,7 +32,6 @@ function ScrollVedios() {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-
         },
       },
       {
@@ -39,7 +40,6 @@ function ScrollVedios() {
           slidesToShow: 1,
           slidesToScroll: 1,
           // initialSlide: 1,
-
         },
       },
       {
@@ -47,7 +47,6 @@ function ScrollVedios() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          
         },
       },
     ],
@@ -61,7 +60,7 @@ function ScrollVedios() {
               className={index === slideIndex ? "slide slide-active" : "slide"}
               key={index}
             >
-              <ScrollCards vedio={vedio}/>
+              <ScrollCards vedio={vedio} />
             </div>
           ))}
         </Slider>

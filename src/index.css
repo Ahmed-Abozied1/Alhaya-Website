@@ -1,18 +1,19 @@
-
-
-
 @font-face {
-  font-family: 'El Messiri';
+  font-family: "El Messiri";
   font-style: normal;
   font-weight: 400;
-  src: local('El Messiri'), url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap') format('woff2');
+  src: local("El Messiri"),
+    url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap")
+      format("woff2");
 }
 
 @font-face {
-  font-family: 'Merienda';
+  font-family: "Merienda";
   font-style: normal;
   font-weight: 400;
-  src: local('Merienda'), url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&display=swap') format('woff2');
+  src: local("Merienda"),
+    url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&display=swap")
+      format("woff2");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&family=Nunito:ital,wght@0,300;0,400;1,300;1,500&family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,300;1,600&family=Roboto:ital,wght@1,700&family=Rozha+One&display=swap");
@@ -20,41 +21,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-*{
-  font-family: "Merienda", cursive, "Nunito", sans-serif, "Poppins", sans-serif, "Roboto", sans-serif, "Rozha One", serif !important;
+* {
+  font-family: "Merienda", cursive, "Nunito", sans-serif, "Poppins", sans-serif,
+    "Roboto", sans-serif, "Rozha One", serif !important;
 }
-
-
-
-
 
 /* Scroll bar  */
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #d1d1d1; 
+  background: #d1d1d1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #222; 
+  background: #222;
 }
 /* dark mode */
 :root {
   --background: white;
-  --text-primary: #959F87;
+  --text-primary: #959f87;
   --text-secondary: royalblue;
   --accent: purple;
 }
-[data-theme='dark'] {
-  --background: #959F87;
+[data-theme="dark"] {
+  --background: #959f87;
   --text-primary: white;
   --text-secondary: grey;
   --accent: darkred;

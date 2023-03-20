@@ -10,7 +10,7 @@ import facebook from "../../images/facebook.png";
 import whatsapp1 from "../../images/whatsapp 4.png";
 import youtube from "../../images/youtube.png";
 import "./Footer.css";
-import {BsSnapchat} from "react-icons/bs"
+import { BsSnapchat } from "react-icons/bs";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -79,7 +79,6 @@ const Footer = () => {
         color="#959F87"
         width="20"
         className="scroll-to-top lg:mr-0 mr-8 "
-
       />
       <div className="container mx-auto px-2  " dir={isRTL ? "rtl" : "ltr"}>
         <div
@@ -103,21 +102,19 @@ const Footer = () => {
               <h3 className="text-footerText  text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
                 {i18n.language === "en" ? link.title : link.title_ar}
               </h3>
-            
+
               <ul className="text-footerText text-xl	 flex flex-col space-y-3">
                 {link.links.map((text, index) => (
-                  <li key={index} >
+                  <li key={index}>
                     <Link
                       to={text.link}
                       className="text-footerText   hover:text-submain  hover:underline"
                     >
                       <div className="flex " dir={isRTL ? "rtl" : "ltr"}>
                         <span>
-                        
-                          <img alt="" src={text.icon}  />
+                          <img alt="" src={text.icon} />
                         </span>
                         <p className="pl-2 pr-2">
-                         
                           {i18n.language === "en" ? text.name : text.name_ar}
                         </p>
                       </div>
@@ -145,8 +142,8 @@ const Footer = () => {
                   </span>
                 </Link>
                 <Link className=" mr-3">
-<BsSnapchat className="text-white text-4xl"/>
-          </Link>
+                  <BsSnapchat className="text-white text-4xl" />
+                </Link>
               </li>
             </ul>
 
@@ -175,11 +172,12 @@ const Footer = () => {
       <div class="  py-4 " dir={isRTL ? "rtl" : "ltr"}>
         <hr class="border-t border-footerText m-4  flex items-center" />
         <p class="text-center text-footerText">
-          {i18n.language === "en" ? " Copyright" : "حقوق النشر"} 
+          {i18n.language === "en" ? " Copyright" : "حقوق النشر"}
           <span className="text-white text-xl  "> © </span>
 
-          {i18n.language === "en" ? " All Rights reserved for Alhayah in Africa" : " جميع الحقوق محفوظه لدي الحياه بإفريقيا"}
-       
+          {i18n.language === "en"
+            ? " All Rights reserved for Alhayah in Africa"
+            : " جميع الحقوق محفوظه لدي الحياه بإفريقيا"}
         </p>
       </div>
     </div>

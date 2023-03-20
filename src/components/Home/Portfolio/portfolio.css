@@ -1,21 +1,18 @@
+.profileSection {
+  padding-bottom: 2rem;
+  background: #959f87;
+}
+.imgCard {
+  border: 4px solid white;
+}
+.imgscroll {
+  margin-left: 0;
+  margin-right: 0;
+}
 
-
-  .profileSection{
-    padding-bottom: 2rem;
-    background: #959F87;
-  
+@media (max-width: 780px) {
+  .imgscroll {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-  .imgCard{
-    border: 4px solid white;
-  }
-  .imgscroll{
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  @media (max-width: 780px) {
-    .imgscroll{
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-   }
+}

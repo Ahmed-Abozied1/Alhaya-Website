@@ -25,9 +25,9 @@ const AlmsCowComponent = () => {
     const message = `  I want to donate ${counter} shares of Cow  اريد التبرع ب ${counter} سهم من البقره`;
     const phone = "+201021892204";
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(
-       message
+      message
     )}`;
-   
+
     window.open(url, "_blank");
   };
 
@@ -77,7 +77,7 @@ const AlmsCowComponent = () => {
         dir={isRTL ? "rtl" : "ltr"}
       >
         <p className="text-black text-sm flex items-center justify-center mt-2 font-semibold">
-          {t("Donate")}  {t("share")}
+          {t("Donate")} {t("share")}
         </p>
         <img
           src="/HomeImages/donate.png"

@@ -23,8 +23,8 @@ background: #D9D9D9;
   }
   .hd{
     display: flex;
-    justify-content: center; /* create space between the div and the image */
-    align-items: center; /* center align the items in the header */
+    justify-content: center;
+    align-items: center; 
   }
   
  
