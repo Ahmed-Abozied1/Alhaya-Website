@@ -3,9 +3,9 @@ import "./About.css"
 
 const AboutUsRow = ({title,para, imgSrc}) => {
   return (
-<div className="  lg:grid lg:grid-cols-2 lg:gap-10 items-center flex  lg:flex-col flex-col-reverse">
+<div className="  lg:grid lg:grid-cols-2 lg:gap-10 lg:mr-2 mr-6 items-center flex  lg:flex-col flex-col-reverse ">
        
-       <div className="flex  lg:gap-4 gap-2 flex-col">
+       <div className="flex  lg:gap-4 gap-2 flex-col ">
 
          <h1 className="xl:text-3xl  text-xl capitalize font-sans font-medium xl:leading-relaxed">
          {title}
@@ -15,15 +15,14 @@ const AboutUsRow = ({title,para, imgSrc}) => {
          </p>
          
        </div>
-       <div className='w-full  lg:w-auto flex justify-center'>
          <img
         
            src={`/HomeImages/${imgSrc}`}
            alt="Mobile app"
-           className="w-25 object-contain "
+           className="w-25 object-contain w-full  lg:w-auto flex justify-center"
          />
        </div>
-     </div>  
+   
      )
 }
 
