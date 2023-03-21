@@ -32,13 +32,13 @@ const ImageAndText = () => {
         <p className="font-bold lg:tex-4xl text-xl "> {t("Followus")}</p>
 
         <div className="headerIcon bg-black  ">
-          <Link className=" ml-3">
+          <Link className=" ml-3" to="https://www.youtube.com/channel/UC-l1VRCKMYsw5ZIUQ2Hdd5g" target="_blank">
             <img src={youtube} alt="" className="h-8" />
           </Link>
-          <Link>
-            <img src={facebook} alt="" className="h-8" />
+          <Link to="https://web.facebook.com/profile.php?id=100089920217767" target="_blank">
+            <img src={facebook} alt="" className="h-8"  />
           </Link>
-          <Link className=" mr-3">
+          <Link className=" mr-3" to="https://www.snapchat.com/add/alhayahinafrica?share_id=5_Ohuoe40eQ&locale=ar-AA" target="_blank">
 <BsSnapchat className="text-white text-3xl"/>
           </Link>
         </div>

@@ -5,7 +5,7 @@ export const Vedios = [
     image: "img1.png",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
-    link: "https://www.youtube.com/watch?v=nqye02H_H6I",
+    link: "https://youtu.be/BFNb9_-u7Q0",
   },
   {
     name: "Alms distribution",
@@ -14,7 +14,7 @@ export const Vedios = [
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
-    link: "https://www.youtube.com/watch?v=jNo82YnmsgA",
+    link: "https://youtu.be/nBRVdT0Y7tw",
   },
   {
     name: "Feed the vow",
@@ -23,7 +23,7 @@ export const Vedios = [
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
-    link: "https://www.youtube.com/watch?v=CVHj7Wxhvdo",
+    link: "https://youtu.be/07dr-7DpBIc",
   },
   {
     name: "Helping the needy",
@@ -32,7 +32,7 @@ export const Vedios = [
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
-    link: "https://www.youtube.com/watch?v=DjwentFsK8U",
+    link: "https://youtu.be/xYILuQohF9c",
   },
 ];
 

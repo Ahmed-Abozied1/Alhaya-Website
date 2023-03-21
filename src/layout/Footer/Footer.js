@@ -131,17 +131,18 @@ const Footer = () => {
             </h3>
             <ul className="text-footerText text-xl">
               <li className="flex items-baseline " dir={isRTL ? "rtl" : "ltr"}>
-                <Link className="mr-0">
+                <Link className="mr-0" to="https://www.youtube.com/channel/UC-l1VRCKMYsw5ZIUQ2Hdd5g" target="_blank">
                   <span>
                     <img alt="" src={youtube} className="lg:h-10" />
                   </span>
                 </Link>
-                <Link className="mr-4 ml-4">
+                <Link className="mr-4 ml-4" to="https://web.facebook.com/profile.php?id=100089920217767" target="_blank">
+
                   <span>
                     <img alt="" src={facebook} className="lg:h-10" />
                   </span>
                 </Link>
-                <Link className=" mr-3">
+                <Link className=" mr-3" to="https://www.snapchat.com/add/alhayahinafrica?share_id=5_Ohuoe40eQ&locale=ar-AA" target="_blank">
                   <BsSnapchat className="text-white text-4xl" />
                 </Link>
               </li>

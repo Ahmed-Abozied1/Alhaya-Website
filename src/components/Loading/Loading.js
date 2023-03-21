@@ -13,7 +13,6 @@ const Loading = ({ children }) => {
   }, [filled, isRunning]);
   const [showLoading, setShowLoading] = useState(true);
 
- 
   return (
     <>
       {showLoading && (
@@ -42,13 +41,13 @@ const Loading = ({ children }) => {
               alt="Loading..."
               class="animate__zoomIn animate__animated "
             />
-            <div className="progressbar">
+            <div className="progressbar mt-12">
               <div
                 style={{
                   height: "100%",
                   width: `${filled}%`,
                   backgroundColor: "#9875CE",
-                  transition: "width 0.5s",
+                  transition: "width 0.2s",
                 }}
               ></div>
               <span className="progressPercent">{filled}%</span>
@@ -62,5 +61,3 @@ const Loading = ({ children }) => {
 };
 
 export default Loading;
-
-
