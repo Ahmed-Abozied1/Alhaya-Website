@@ -41,7 +41,7 @@ const Loading = ({ children }) => {
               alt="Loading..."
               class="animate__zoomIn animate__animated "
             />
-            <div className="progressbar mt-12">
+            {/* <div className="progressbar mt-12">
               <div
                 style={{
                   height: "100%",
@@ -51,7 +51,7 @@ const Loading = ({ children }) => {
                 }}
               ></div>
               <span className="progressPercent">{filled}%</span>
-            </div>
+            </div> */}
           </div>
         </div>
       )}
