@@ -14,6 +14,7 @@
   background-color: #fff;
   color: white;
   transition: background-color 0.2s, color 0.2s;
+  z-index: 100;
 }
 
 .scroll-to-top:hover {
