@@ -103,19 +103,22 @@ const Footer = () => {
               <h3 className="text-footerText  text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
                 {i18n.language === "en" ? link.title : link.title_ar}
               </h3>
-{/* contact */}
+              {/* contact */}
               <ul className="text-footerText text-xl flex flex-col space-y-3">
                 {link.links.map((text, index) => (
                   <li key={index}>
                     <Link
                       to={text.link}
-                      className="text-footerText   hover:text-submain  hover:underline"
+                      className="text-footerText  hover:text-submain  hover:underline"
                     >
                       <div className="flex " dir={isRTL ? "rtl" : "ltr"}>
-                       
-                          <img className="footerContactIcons"  alt="" src={text.icon} />
-                     
-                        <p className="pl-2 pr-2">
+                        <img
+                      
+                          alt=""
+                          src={text.icon}
+                        />
+
+                        <p className="pl-1 pr-1 contactText">
                           {i18n.language === "en" ? text.name : text.name_ar}
                         </p>
                       </div>
@@ -125,25 +128,36 @@ const Footer = () => {
               </ul>
             </div>
           ))}
-{/* social */}
+          {/* social */}
           <div className="col-span-1   md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0">
             <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
               {i18n.language === "en" ? "  Social Media Links" : "سوشيال ميديا"}
             </h3>
             <ul className="text-footerText text-xl">
               <li className="flex items-baseline " dir={isRTL ? "rtl" : "ltr"}>
-                <Link className="mr-0" to="https://www.youtube.com/channel/UC-l1VRCKMYsw5ZIUQ2Hdd5g" target="_blank">
+                <Link
+                  className="mr-0"
+                  to="https://www.youtube.com/channel/UC-l1VRCKMYsw5ZIUQ2Hdd5g"
+                  target="_blank"
+                >
                   <span>
                     <img alt="" src={youtube} className="lg:h-10 h-10" />
                   </span>
                 </Link>
-                <Link className="mr-4 ml-4" to="https://web.facebook.com/profile.php?id=100089920217767" target="_blank">
-
+                <Link
+                  className="mr-4 ml-4"
+                  to="https://web.facebook.com/profile.php?id=100089920217767"
+                  target="_blank"
+                >
                   <span>
                     <img alt="" src={facebook} className="lg:h-10 h-10" />
                   </span>
                 </Link>
-                <Link className=" mr-3" to="https://www.snapchat.com/add/alhayahinafrica?share_id=5_Ohuoe40eQ&locale=ar-AA" target="_blank">
+                <Link
+                  className=" mr-3"
+                  to="https://www.snapchat.com/add/alhayahinafrica?share_id=5_Ohuoe40eQ&locale=ar-AA"
+                  target="_blank"
+                >
                   <BsSnapchat className="text-white text-4xl" />
                 </Link>
               </li>
