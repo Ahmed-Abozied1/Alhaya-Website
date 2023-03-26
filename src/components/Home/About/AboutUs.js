@@ -10,11 +10,11 @@ const AboutUs = () => {
  
   return (
     <section id="about">
-    <div class="flex flex-col justify-center items-center ">
-    <header class="mb-2 mt-12 text-4xl font-bold">
-        <div class="relative titlee">
+    <div className="flex flex-col justify-center items-center ">
+    <header className="mb-2 mt-12 text-4xl font-bold">
+        <div className="relative titlee">
           <img src="/HomeImages/title.png" alt="" />
-          <h1 class="lg:text-3xl  text-2xl">
+          <h1 className="lg:text-3xl  text-2xl">
           {t("About us")}
 
           </h1>

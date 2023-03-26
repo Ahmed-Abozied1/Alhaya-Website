@@ -17,11 +17,11 @@ const Alms = () => {
   };
 
   return (
-    <section id="alms" class="flex  flex-col justify-center items-center ">
-     <header class="hd mb-2 mt-12 text-4xl font-bold flex justify-between w-full">
-  <div class="relative titlee">
+    <section id="alms" className="flex  flex-col justify-center items-center ">
+     <header className="hd mb-2 mt-12 text-4xl font-bold flex justify-between w-full">
+  <div className="relative titlee">
     <img src="/HomeImages/title.png" alt="" />
-    <h1 class="lg:text-3xl   text-2xl  ">
+    <h1 className="lg:text-3xl   text-2xl  ">
       {t("OurAlms")}
     </h1>
   </div>
@@ -42,7 +42,7 @@ const Alms = () => {
             />
           </div>
          </button>
-          <div class="border-2 border-white h-22 ml-4 mr-4"></div>
+          <div className="border-2 border-white h-22 ml-4 mr-4"></div>
          <button onClick={handleshowAlmsSheepComponent}> 
          <div className="w-24 bg-main h-24 relative rounded-full border-4 border-white hover:border-dashed">
             <img

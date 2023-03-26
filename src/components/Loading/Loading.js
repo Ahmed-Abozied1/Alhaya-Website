@@ -39,7 +39,7 @@ const Loading = ({ children }) => {
             <img
               src={loadingImage}
               alt="Loading..."
-              class="animate__zoomIn animate__animated "
+              className="animate__zoomIn animate__animated "
             />
             {/* <div className="progressbar mt-12">
               <div

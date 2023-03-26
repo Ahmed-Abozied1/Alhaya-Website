@@ -11,10 +11,10 @@ const ImageAndText = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div class="relative">
-      <div>
+    <div className="relative">
+      <div className="titleHeader">
       <img src="HomeImages/1.png" alt="" className="opacity-30 " />
-      <h1 class="absolute  flex header w-full lg:leading-10 leading-12 text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <h1 className="absolute  flex header w-full  text-black">
         {t("header1")}
         <br />
         {t("header2")}

@@ -148,16 +148,16 @@ const NavBar = () => {
           </a>
 
           {/* <!-- Register --> */}
-          <Link
+          <Link to="#"
             className="flex text-white  hover:text-gray-500
             cursor-pointer font-normal transition-colors duration-300"
             onClick={changeToEnglish}
           >
             {t("EN")}
           </Link>
-          <div class="h-[30px]  bg-white w-[1px]"></div>
+          <div className="h-[30px]  bg-white w-[1px]"></div>
           {/* <!-- Login --> */}
-          <Link
+          <Link to="#"
             onClick={changeToArabic}
             className="flex text-white  hover:text-gray-500
             cursor-pointer font-normal lg:mr-0 mr-2	lg:ml-0 ml-2 transition-colors duration-300"

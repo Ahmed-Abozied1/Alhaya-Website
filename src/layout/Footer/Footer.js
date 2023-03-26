@@ -31,24 +31,24 @@ const Footer = () => {
         },
         {
           name: "About Us",
-          name_ar: "معلومات عننا",
+          name_ar: "معلومات عننــا",
           link: "#",
         },
         {
           name: "Services",
-          name_ar: "خدماتنا",
+          name_ar: "خدماتنــا",
           link: "#",
         },
         {
           name: "Portfolio",
-          name_ar: "اعمالنا",
+          name_ar: "اعمالنــا",
           link: "#",
         },
       ],
     },
     {
       title: "CONTACT",
-      title_ar: "التواصل",
+      title_ar: "التواصـل",
       links: [
         {
           name: "+201021892204",
@@ -94,6 +94,7 @@ const Footer = () => {
               />
             </Link>
           </div>
+          {/* Quick Links */}
           {Links.map((link, index) => (
             <div
               key={index}
@@ -102,8 +103,8 @@ const Footer = () => {
               <h3 className="text-footerText  text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
                 {i18n.language === "en" ? link.title : link.title_ar}
               </h3>
-
-              <ul className="text-footerText text-xl	 flex flex-col space-y-3">
+{/* contact */}
+              <ul className="text-footerText text-xl flex flex-col space-y-3">
                 {link.links.map((text, index) => (
                   <li key={index}>
                     <Link
@@ -111,9 +112,9 @@ const Footer = () => {
                       className="text-footerText   hover:text-submain  hover:underline"
                     >
                       <div className="flex " dir={isRTL ? "rtl" : "ltr"}>
-                        <span>
-                          <img alt="" src={text.icon} />
-                        </span>
+                       
+                          <img className="footerContactIcons"  alt="" src={text.icon} />
+                     
                         <p className="pl-2 pr-2">
                           {i18n.language === "en" ? text.name : text.name_ar}
                         </p>
@@ -124,7 +125,7 @@ const Footer = () => {
               </ul>
             </div>
           ))}
-
+{/* social */}
           <div className="col-span-1   md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0">
             <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
               {i18n.language === "en" ? "  Social Media Links" : "سوشيال ميديا"}
@@ -133,13 +134,13 @@ const Footer = () => {
               <li className="flex items-baseline " dir={isRTL ? "rtl" : "ltr"}>
                 <Link className="mr-0" to="https://www.youtube.com/channel/UC-l1VRCKMYsw5ZIUQ2Hdd5g" target="_blank">
                   <span>
-                    <img alt="" src={youtube} className="lg:h-10" />
+                    <img alt="" src={youtube} className="lg:h-10 h-10" />
                   </span>
                 </Link>
                 <Link className="mr-4 ml-4" to="https://web.facebook.com/profile.php?id=100089920217767" target="_blank">
 
                   <span>
-                    <img alt="" src={facebook} className="lg:h-10" />
+                    <img alt="" src={facebook} className="lg:h-10 h-10" />
                   </span>
                 </Link>
                 <Link className=" mr-3" to="https://www.snapchat.com/add/alhayahinafrica?share_id=5_Ohuoe40eQ&locale=ar-AA" target="_blank">
@@ -163,7 +164,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <span className="text-sm font-bold text-white">
-                  {i18n.language === "en" ? "WhatsApp us" : "تواصل معنا "}
+                  {i18n.language === "en" ? "WhatsApp us" : "تواصل معنــا "}
                 </span>
               </a>
             </div>
