@@ -10,9 +10,9 @@ const Services = () => {
   return (
     <section class="flex mt-10 flex-col justify-center items-center  " id="services">
       <header class="mb-2 text-4xl font-bold">
-        <div class="relative">
+        <div class="relative titlee">
           <img src="/HomeImages/title.png" alt="" className=" "/>
-          <h1 class="lg:text-3xl text-2xl ml-12 lg:ml-6  absolute text-black font-bold top-1/2 lg:left-1/3 left-1/4 transform -translate-x-1/4 -translate-y-1/2 whitespace-nowrap"
+          <h1 class="lg:text-3xl text-2xl "
           >
           {t("OurServices")}
           </h1>

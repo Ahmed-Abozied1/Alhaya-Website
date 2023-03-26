@@ -12,9 +12,9 @@ const AboutUs = () => {
     <section id="about">
     <div class="flex flex-col justify-center items-center ">
     <header class="mb-2 mt-12 text-4xl font-bold">
-        <div class="relative">
+        <div class="relative titlee">
           <img src="/HomeImages/title.png" alt="" />
-          <h1 class="lg:text-3xl ml-6 lg:ml-0 text-xl w-full absolute text-black font-bold top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/2">
+          <h1 class="lg:text-3xl  text-2xl">
           {t("About us")}
 
           </h1>
@@ -34,7 +34,7 @@ at nominal prices and in accordance with Islamic law."
       />
         :
         <AboutUsRow
-        title="قصتنا"
+        title="قصتنــا"
         para="نحن منظمة هادفة للربح تهدف إلى تقديم خدمات العقائق
 والصدقات والنذور لإخواننا المسلمين في دولة تنزانيا
 بأسعار رمزية ووفقًا للشريعة الإسلامية"
@@ -62,7 +62,7 @@ the privacy of the donor."
         imgSrc="Group3.png"
       />:
        <AboutUsRow
-        title="هدفنا"
+        title="هدفنــا"
         para="هدفنا خدمة الناس في تنفيذ الأضاحي والعقائق 
 والصدقات وإيصالها للمحتاجين من المسلمين"
         imgSrc="Group3.png"

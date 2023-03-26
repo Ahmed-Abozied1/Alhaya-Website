@@ -19,9 +19,9 @@ const Alms = () => {
   return (
     <section id="alms" class="flex  flex-col justify-center items-center ">
      <header class="hd mb-2 mt-12 text-4xl font-bold flex justify-between w-full">
-  <div class="relative">
+  <div class="relative titlee">
     <img src="/HomeImages/title.png" alt="" />
-    <h1 class="lg:text-3xl ml-9 lg:ml-4 text-xl  absolute text-black font-bold top-1/2 lg:left-1/3 left-1/3 transform -translate-x-1/4 -translate-y-1/2">
+    <h1 class="lg:text-3xl   text-2xl  ">
       {t("OurAlms")}
     </h1>
   </div>

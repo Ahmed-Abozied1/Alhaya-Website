@@ -24,9 +24,9 @@ const Questions = () => {
       />
 
       <header class="lg:m-2 m-0  text-4xl font-bold">
-        <div class="relative">
+        <div class="relative titlee">
           <img src="/HomeImages/title.png" alt="" />
-          <h1 class="lg:text-3xl text-2xl ml-3 lg:ml-0   absolute text-black font-bold top-1/2 lg:left-1/3 left-1/4 transform -translate-x-1/4 -translate-y-1/2 whitespace-nowrap">
+          <h1 class="lg:text-3xl text-2xl  ">
             {t("FrequentlyAskedQuestions")}
           </h1>
         </div>

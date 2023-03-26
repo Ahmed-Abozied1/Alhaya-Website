@@ -4,3 +4,21 @@
 .raduisanswer {
   border-radius: 0 0 4px 4px;
 }
+
+.titlee {
+  position: relative;
+  text-align: center;
+}
+
+.titlee img {
+  display: block;
+}
+
+.titlee h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 100%;
+}
