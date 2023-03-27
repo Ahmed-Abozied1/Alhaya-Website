@@ -72,20 +72,20 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-navColor py-4 bprder=t-2 ">
+    <div className="bg-navColor py-4 bprder=t-2 foot">
       <ScrollToTop
         smooth
         top="1000"
         color="#959F87"
         width="20"
-        className="scroll-to-top lg:mr-0 mr-8 "
+        className="scroll-to-top lg:mr-0 mr-3 "
       />
       <div className="container mx-auto px-2  " dir={isRTL ? "rtl" : "ltr"}>
         <div
-          className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between
+          className="grid centerFoot grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between
           "
         >
-          <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
+          <div className="pb-3.5  sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <Link to="#">
               <img
                 src={logo}
@@ -98,18 +98,18 @@ const Footer = () => {
           {Links.map((link, index) => (
             <div
               key={index}
-              className="col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0 "
+              className="col-span-2 centerFoot md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0 "
             >
               <h3 className="text-footerText lg:ml-0 ml-3 text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
                 {i18n.language === "en" ? link.title : link.title_ar}
               </h3>
               {/* contact */}
-              <ul className="text-footerText text-xl  lg:ml-0 ml-3 flex flex-col space-y-3">
+              <ul className="text-footerText  text-xl  lg:ml-0 ml-3 flex flex-col space-y-3">
                 {link.links.map((text, index) => (
                   <li key={index}>
                     <Link
                       to={text.link}
-                      className="text-footerText  hover:text-submain  hover:underline"
+                      className="text-footerText   hover:text-submain  hover:underline"
                     >
                       <div className="flex " dir={isRTL ? "rtl" : "ltr"}>
                         <img alt="" src={text.icon} />
@@ -125,11 +125,11 @@ const Footer = () => {
             </div>
           ))}
           {/* social */}
-          <div className="col-span-1   md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0">
+          <div className="col-span-1 social centerFoot  md:col-span-2 lg:col-span-3 pb-3 sm:pb-0">
             <h3 className="text-footerText text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
               {i18n.language === "en" ? "  Social Media Links" : "سوشيال ميديا"}
             </h3>
-            <ul className="text-footerText text-xl">
+            <ul className="text-footerText centerFoot text-xl ">
               <li className="flex items-baseline " dir={isRTL ? "rtl" : "ltr"}>
                 <Link
                   className="mr-0"
@@ -183,17 +183,10 @@ const Footer = () => {
       </div>
       <div class="  py-4 ml-2 mr-2  text-center " dir={isRTL ? "rtl" : "ltr"}>
         <hr class="border-t border-footerText m-4  flex items-center" />
-        <p class="text-center text-footerText  flex justify-center flex-row  ">
-          <p> {i18n.language === "en" ? " Copyright" : "حقوق النشر"}</p>
-
-          <p className="text-white text-xl ml-1 mr-1"> &copy;</p>
-
-          <p>
-           
-            {i18n.language === "en"
-              ? " All Rights reserved for Alhayah in Africa"
-              : " جميع الحقوق محفوظه لدي الحياه بإفريقيا"}
-          </p>
+        <p class=" text-footerText copyright">
+          {i18n.language === "en"
+            ? ` Copyright © All Rights reserved for Alhayah in Africa `
+            : "  جميع الحقوق ©  محفوظه لدي الحياه بإفريقيا"}
         </p>
       </div>
     </div>

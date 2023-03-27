@@ -1,6 +1,7 @@
 .whatsFooterIcon {
   width: 166px;
   height: 55px;
+  margin-top: 3.5rem;
 
   background: #64b161;
   border-radius: 0px 30px 30px 30px;
@@ -40,10 +41,42 @@
   }
 }
 
+.copyright{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
 
 @media (max-width: 780px) {
   .contactText{
     font-size: 1.1rem;
   }
   }
- 
+  @media only screen and (max-width: 600px) {
+    .copyright{
+      display: flex;
+      text-align: center;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+   
+    }
+    .whatsFooterIcon {
+      width: 150px;
+      height: 51px;
+    margin-top: 2rem;
+
+      background: #64b161;
+      border-radius: 0px 30px 30px 30px;
+    }
+    .centerFoot{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+    }
+  }

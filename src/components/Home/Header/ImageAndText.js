@@ -25,7 +25,7 @@ const ImageAndText = () => {
       </h1>
       </div>
 
-      <div className=" lg:mb-8 mb-4 gap-4 flex flex-col  lg:text-right md:text-right text-center  justify-center   md:text-lg text-sm">
+      <div className=" lg:mb-8 mb-4 gap-4 flex flex-col  africaLifeFoundation  justify-center   md:text-lg text-sm">
         <p className="text-black font-serif  lg:tex-4xl text-2xl  ">
           {t("AfricaLifeFoundation")}
         </p>
