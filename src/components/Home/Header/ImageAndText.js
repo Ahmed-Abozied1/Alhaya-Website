@@ -14,7 +14,7 @@ const ImageAndText = () => {
     <div className="relative">
       <div className="titleHeader">
       <img src="HomeImages/1.png" alt="" className="opacity-30 " />
-      <h1 className="absolute  flex header w-full  text-black">
+      <h1 className="absolute font-semibold  header w-full  text-black">
         {t("header1")}
         <br />
         {t("header2")}
@@ -25,13 +25,13 @@ const ImageAndText = () => {
       </h1>
       </div>
 
-      <div className=" lg:mb-4 mb-4 gap-4 flex flex-col justify-center   md:text-lg text-sm">
+      <div className=" lg:mb-8 mb-4 gap-4 flex flex-col  lg:text-right md:text-right text-center  justify-center   md:text-lg text-sm">
         <p className="text-black font-serif  lg:tex-4xl text-2xl  ">
           {t("AfricaLifeFoundation")}
         </p>
         <p className="font-bold lg:tex-4xl text-xl "> {t("Followus")}</p>
-
-        <div className="headerIcon bg-black  ">
+<div className=" HeaderIcons">
+<div className="headerIcon bg-black  ">
           <Link className=" ml-3" to="https://www.youtube.com/channel/UC-l1VRCKMYsw5ZIUQ2Hdd5g" target="_blank">
             <img src={youtube} alt="" className="h-8" />
           </Link>
@@ -42,7 +42,7 @@ const ImageAndText = () => {
 <BsSnapchat className="text-white text-3xl"/>
           </Link>
         </div>
-        <div className="whatsFooterIcon mt-3 flex items-center justify-evenly">
+        <div className="whatsFooterIcon  mt-3 flex items-center justify-evenly">
           <Link>
             <img src={whatsapp1} alt="" className="h-8" />
           </Link>
@@ -55,6 +55,8 @@ const ImageAndText = () => {
             <span className="text-sm font-bold text-white">{t("WhatsAppus")}</span>
           </a>
         </div>
+</div>
+       
       </div>
     </div>
   );

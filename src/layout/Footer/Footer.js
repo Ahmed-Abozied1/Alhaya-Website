@@ -100,11 +100,11 @@ const Footer = () => {
               key={index}
               className="col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0 "
             >
-              <h3 className="text-footerText  text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
+              <h3 className="text-footerText lg:ml-0 ml-3 text-2xl font-bold lg:leading-7  mb-4 sm:mb-5 lg:mb-6  ">
                 {i18n.language === "en" ? link.title : link.title_ar}
               </h3>
               {/* contact */}
-              <ul className="text-footerText text-xl flex flex-col space-y-3">
+              <ul className="text-footerText text-xl  lg:ml-0 ml-3 flex flex-col space-y-3">
                 {link.links.map((text, index) => (
                   <li key={index}>
                     <Link
@@ -112,11 +112,7 @@ const Footer = () => {
                       className="text-footerText  hover:text-submain  hover:underline"
                     >
                       <div className="flex " dir={isRTL ? "rtl" : "ltr"}>
-                        <img
-                      
-                          alt=""
-                          src={text.icon}
-                        />
+                        <img alt="" src={text.icon} />
 
                         <p className="pl-1 pr-1 contactText">
                           {i18n.language === "en" ? text.name : text.name_ar}
@@ -185,15 +181,19 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="  py-4 " dir={isRTL ? "rtl" : "ltr"}>
+      <div class="  py-4 ml-2 mr-2  text-center " dir={isRTL ? "rtl" : "ltr"}>
         <hr class="border-t border-footerText m-4  flex items-center" />
-        <p class="text-center text-footerText">
-          {i18n.language === "en" ? " Copyright" : "حقوق النشر"}
-          <span className="text-white text-xl  "> © </span>
+        <p class="text-center text-footerText  flex justify-center flex-row  ">
+          <p> {i18n.language === "en" ? " Copyright" : "حقوق النشر"}</p>
 
-          {i18n.language === "en"
-            ? " All Rights reserved for Alhayah in Africa"
-            : " جميع الحقوق محفوظه لدي الحياه بإفريقيا"}
+          <p className="text-white text-xl ml-1 mr-1"> &copy;</p>
+
+          <p>
+           
+            {i18n.language === "en"
+              ? " All Rights reserved for Alhayah in Africa"
+              : " جميع الحقوق محفوظه لدي الحياه بإفريقيا"}
+          </p>
         </p>
       </div>
     </div>
