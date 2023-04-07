@@ -1,30 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
+import ModalVideo from 'react-modal-video';
+import 'react-modal-video/scss/modal-video.scss';
+
 import "./ScrollVedio.css"
+import { useState } from "react";
 const ScrollCard = ({ vedio }) => {
-  const [playing, setPlaying] = useState(false);
+  const [isOpen, setOpen] = useState(false)
+
   const { t, i18n } = useTranslation();
 
-  
-  const handleVideoEnded = () => {
-    setPlaying(false);
+  const openModal = () => {
+    setOpen(true);
   };
+ 
 
   
   return (
     <div className="mb-4 hover:cursor-pointer cardVedio   bg-white">
-      <div className="vedioImg">
-        <ReactPlayer
-          url={vedio.link}
-          controls={true}
-          width="100%"
-          height="auto"
-          playing={playing}
-          onEnded={handleVideoEnded}
-        />
-       
-      </div>
+     
+      <img src={`/HomeImages/ScrollVedioImage/${vedio.image}`} alt="" className="vedioImage"/>
+      <ModalVideo
+        channel='youtube'
+        isOpen={isOpen}
+        videoId={vedio.link}
+        onClose={() => setOpen(false)}
+      />
       <div className="mt-4 justify-center flex flex-col">
        {i18n.language ==="ar" ?
        
@@ -46,6 +48,18 @@ const ScrollCard = ({ vedio }) => {
           {vedio.title}
         </p>
        }
+      <div className="flex text-center items-center justify-center mt-4">
+      {i18n.language ==="ar" ?
+       
+       <button onClick={openModal} className="text-gray-700 text-base flex justify-center playBtn">
+         تشغيل
+        </button>
+        :
+        <button onClick={openModal} className="text-gray-700 text-base flex justify-center playBtn">
+         play
+        </button>
+       }
+      </div>
        
       </div>
       

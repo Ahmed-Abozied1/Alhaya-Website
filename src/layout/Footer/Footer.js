@@ -9,6 +9,8 @@ import place from "../../images/place.png";
 import facebook from "../../images/facebook.png";
 import whatsapp1 from "../../images/whatsapp 4.png";
 import youtube from "../../images/youtube.png";
+import twitter from "../../images/twitter.png";
+
 import "./Footer.css";
 import { BsSnapchat } from "react-icons/bs";
 
@@ -104,7 +106,7 @@ const Footer = () => {
                 {i18n.language === "en" ? link.title : link.title_ar}
               </h3>
               {/* contact */}
-              <ul className="text-footerText  text-xl  lg:ml-0 ml-3 flex flex-col space-y-3">
+              <ul className="text-footerText centerFoot text-xl  lg:ml-0 ml-3 flex flex-col space-y-3">
                 {link.links.map((text, index) => (
                   <li key={index}>
                     <Link
@@ -147,6 +149,15 @@ const Footer = () => {
                 >
                   <span>
                     <img alt="" src={facebook} className="lg:h-10 h-10" />
+                  </span>
+                </Link>
+                <Link
+                  className="mr-4 ml-4"
+                  to="https://twitter.com/AlhayaInAfrica?t=Qq8W3lBluleybJEC15vW1Q&s=08"
+                  target="_blank"
+                >
+                  <span>
+                    <img alt="" src={twitter} className="lg:h-10 h-10" />
                   </span>
                 </Link>
                 <Link

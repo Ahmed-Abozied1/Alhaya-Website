@@ -1,69 +1,54 @@
 import { useState } from "react";
-import Slider from "react-slick";
 import "./ScrollVedio.css";
 import { Vedios } from "../../../Data/Vedios";
 import ScrollCards from "./ScrollCard";
+import { useTranslation } from "react-i18next";
 
 function ScrollVedios() {
-  const [slideIndex, setSlideIndex] = useState(0);
+  const [nOfElement, setNOfElement] = useState(3);
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+  const slice = Vedios.slice(0, nOfElement);
 
-  const settings = {
-    infinite: true,
-    dots: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    beforeChange: (current, next) => setSlideIndex(next),
-    centerMode: true,
-    arrows: false,
-    customPaging: (current, next) => (
-      <div className="slick-dots">
-        <div
-          className={current === slideIndex ? "dot dot-active" : "dot"}
-        ></div>
-      </div>
-    ),
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          // initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  const loadMore = () => {
+    const newNOfElement = nOfElement + nOfElement;
+    setNOfElement(newNOfElement >= Vedios.length ? Vedios.length : newNOfElement);
   };
+  
+
+  const loadLess = () => {
+    setNOfElement(3);
+  };
+
   return (
-    <section className=" con  bg-navColor">
-      <div className="slider">
-        <Slider {...settings}>
-          {Vedios.map((vedio, index) => (
-            <div
-              className={index === slideIndex ? "slide slide-active" : "slide"}
-              key={index}
-            >
+    <section className="items-center">
+      <div className="con bg-navColor">
+        <div className="lg:grid lg:grid-cols-3 md:grid-cols-6 lg:gap-5">
+          {slice.map((vedio, index) => (
+            <div className="m-5" key={index}>
               <ScrollCards vedio={vedio} />
             </div>
           ))}
-        </Slider>
+        </div>
+      </div>
+      <div className="text-center items-center flex justify-center"  dir={isRTL ? "rtl" : "ltr"}>
+        {nOfElement < Vedios.length && (
+          <button
+            onClick={() => loadMore()}
+            className="font-semibold hover:text-navColor py-2 px-4 border border-none"
+          >
+           {t("SeeMore")}
+       
+          </button>
+        )}
+        {nOfElement > 3 && (
+          <button
+            onClick={() => loadLess()}
+            className="font-semibold hover:text-navColor py-2 px-4 border border-none mr-2"
+          >
+             {t("SeeLess")}
+          </button>
+        )}
       </div>
     </section>
   );

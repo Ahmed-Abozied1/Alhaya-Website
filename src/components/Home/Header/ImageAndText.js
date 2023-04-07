@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import facebook from "../../../images/facebook.png";
 import whatsapp1 from "../../../images/whatsapp 4.png";
 import youtube from "../../../images/youtube.png";
+import twitter from "../../../images/twitter.png";
+
 import {BsSnapchat} from "react-icons/bs"
 const ImageAndText = () => {
   const [phoneNumber, setPhoneNumber] = useState("0201068801942");
@@ -34,6 +36,9 @@ const ImageAndText = () => {
 <div className="headerIcon bg-black  ">
           <Link className=" ml-3" to="https://www.youtube.com/channel/UC-l1VRCKMYsw5ZIUQ2Hdd5g" target="_blank">
             <img src={youtube} alt="" className="h-8" />
+          </Link>
+          <Link className=" ml-3" to="https://twitter.com/AlhayaInAfrica?t=Qq8W3lBluleybJEC15vW1Q&s=08" target="_blank">
+            <img src={twitter} alt="" className="h-8" />
           </Link>
           <Link to="https://web.facebook.com/profile.php?id=100089920217767" target="_blank">
             <img src={facebook} alt="" className="h-8"  />

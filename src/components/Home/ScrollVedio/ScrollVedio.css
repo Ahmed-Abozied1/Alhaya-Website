@@ -50,8 +50,8 @@
 }
 .con {
   width: 100%;
-  max-width: 1120px;
-  height: 450px;
+  /* max-width: 1120px; */
+  height: 100%;
   overflow: hidden;
   background: #959f87;
   border-radius: 100px 0px;
@@ -59,8 +59,26 @@
   justify-content: center;
   margin: 0 auto;
 }
+.vedioImage{
+  overflow: hidden;
+  height: 12rem;
+  
+  object-fit: cover;
+  
+}
+.playBtn{
+width: 144px;
+height: 52px;
+color: #fff;
+align-items: center;
+
+background: #959F87;
+border-radius: 0px 30px 30px 30px;
+}
 .cardVedio {
-  border-radius: 0 3.2rem 0;
+  /* border-radius: 0 3.2rem 0; */
+  border-radius: 3.2rem 0px;
+
   width: 16rem;
   display: flex;
   flex-direction: column;
@@ -76,7 +94,8 @@
   .con {
     width: 100%;
     border-radius: 100px 0px;
-    height: 500px;
+    /* height: 500px; */
+    height: 100%;
     display: flex;
     justify-content: center;
   }
@@ -87,10 +106,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 0 3.2rem 0;
+    /* border-radius: 0 3.2rem 0; */
+    border-radius: 3.2rem 0px;
+
     margin-left: auto; /* Remove left margin */
     margin-right: auto; /* Remove right margin */
     width: 80%;
+  }
+  .vedioImage{
+    overflow: hidden;
+    height: 100vh;
+    
+    object-fit: cover;
+    
   }
 }
 
@@ -105,3 +133,5 @@
 .dot-active {
   background-color: #fff;
 }
+
+
