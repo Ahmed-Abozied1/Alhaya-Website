@@ -10,7 +10,7 @@ export const Vedios = [
   {
     name: "Alms distribution",
     name_ar:"توزيع الصدقات",
-    image: "img3.png",
+    image: "img2.png",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
@@ -19,7 +19,7 @@ export const Vedios = [
   {
     name: "Feed the vow",
     name_ar: "عمل النذر",
-    image: "img2.png",
+    image: "img3.png",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
@@ -28,55 +28,55 @@ export const Vedios = [
   {
     name: "Helping the needy",
     name_ar: "مساعدة المحتاجين",
-    image: "img3.png",
+    image: "img4.jpg",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
-    link: "xYILuQohF9c",
+    link: "ukOz1heULao",
   },
   {
     name: "Helping the needy",
     name_ar: "مساعدة المحتاجين",
-    image: "img3.png",
+    image: "img5.jpg",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
-    link: "xYILuQohF9c",
+    link: "UYlynPhjbGw",
   },
    {
     name: "Food Distribution",
     name_ar:"توزيع الطعام",
-    image: "img1.png",
+    image: "img6.jpg",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
-    link: "BFNb9_-u7Q0",
+    link: "Jh0k3QgLu2c",
   },
   {
     name: "Alms distribution",
     name_ar:"توزيع الصدقات",
-    image: "img3.png",
+    image: "img7.jpg",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
-    link: "nBRVdT0Y7tw",
+    link: "m4kb1KY2U50",
   },
   {
     name: "Feed the vow",
     name_ar: "عمل النذر",
-    image: "img2.png",
+    image: "img8.jpg",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
-    link: "07dr-7DpBIc",
+    link: "TiK79jSi2Vg",
   },
   {
     name: "Helping the needy",
     name_ar: "مساعدة المحتاجين",
-    image: "img3.png",
+    image: "img9.jpg",
     title: "Africa Life Foundation",
     tite_ar:"مؤسسة الحياة الافريقية",
 
-    link: "xYILuQohF9c",
+    link: "AkPwSv6c914",
   },
   
   

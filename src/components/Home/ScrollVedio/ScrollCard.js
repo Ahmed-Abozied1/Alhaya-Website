@@ -56,7 +56,7 @@ const ScrollCard = ({ vedio }) => {
         </button>
         :
         <button onClick={openModal} className="text-gray-700 text-base flex justify-center playBtn">
-         play
+         Play
         </button>
        }
       </div>
