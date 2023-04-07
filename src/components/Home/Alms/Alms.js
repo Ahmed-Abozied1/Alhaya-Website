@@ -59,7 +59,7 @@ const Alms = () => {
       </div>
       {/* ** */}
       {showAlmsCowComponent ? <AlmsCowComponent /> : <AlmsSheepComponent />}
-
+     
     </section>
   );
 };

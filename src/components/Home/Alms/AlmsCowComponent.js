@@ -6,23 +6,25 @@ const AlmsCowComponent = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
 
-  const increaseCounter = () => {
-    setCounter(counter + 1);
-    if (counter > 7) {
-      setCounter(8);
-    }
-  };
+  // const increaseCounter = () => {
+  //   setCounter(counter + 1);
+  //   if (counter > 7) {
+  //     setCounter(8);
+  //   }
+  // };
 
-  const decreaseCounter = () => {
-    setCounter(counter - 1);
+  // const decreaseCounter = () => {
+  //   setCounter(counter - 1);
 
-    if (counter <= 1) {
-      setCounter(1);
-    }
-  };
+  //   if (counter <= 1) {
+  //     setCounter(1);
+  //   }
+  // };
 
   const handleShareButtonClick = () => {
-    const message = `  I want to donate ${counter} shares of Cow  اريد التبرع ب ${counter} سهم من البقره`;
+    // const message = `  I want to donate ${counter} shares of Cow  اريد التبرع ب ${counter} سهم من البقره`;
+    const message = `  I want to donate a Cow  اريد التبرع ب بقره`;
+
     const phone = "+201021892204";
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(
       message
@@ -32,8 +34,8 @@ const AlmsCowComponent = () => {
   };
 
   return (
-    <div className="flex flex-col m-6  AlmsCon   items-center  w-full justify-between text-center">
-      <div>
+    <div className="flex flex-col m-6  AlmsCon   items-center  w-full justify-evenly text-center">
+      {/* <div>
         <div className="flex flex-wrap justify-center ">
           {[...Array(8)].map((_, i) => (
             <div
@@ -48,19 +50,20 @@ const AlmsCowComponent = () => {
           {" "}
           ={" "}
         </span>
-      </div>
+      </div> */}
 
-      <div>
-        <div className="bigCow lg:w-32 lg:h-32 w-28 h-28 bg- bg-navColor  flex items-center justify-center rounded-full">
-          <img src={`/HomeImages/cow.png`} alt="" className="inset-0 m-auto " />
-        </div>
-        <p className="font-bold text-xl mb-2">360$</p>
-      </div>
+     
 
-      <div className="font-semibold">
-        <p>{t("SharepriceCow")}</p>
-      </div>
 
+        <div className="bigCow lg:w-32 lg:h-32 w-28 h-28 bg- bg-navColor  flex-col items-center justify-center rounded-full">
+               <img src={`/HomeImages/cow.png`} alt="" className="inset-0 m-auto " />
+               <p className="font-bold lg:text-xl text-sm  mt-4 mb-2"> {t("300$Dollar")}</p>
+
+    </div>
+
+    {/* <div className="font-semibold">
+      <p> {t("SharepriceSheep")}</p>
+    </div>
       <div className="btnClick flex flex-row justify-around w-full">
         <button onClick={decreaseCounter} className="text-white text-3xl">
           -
@@ -69,7 +72,7 @@ const AlmsCowComponent = () => {
         <button onClick={increaseCounter} className="text-white text-2xl">
           +
         </button>
-      </div>
+      </div> */}
 
       <button
         onClick={handleShareButtonClick}
@@ -77,7 +80,7 @@ const AlmsCowComponent = () => {
         dir={isRTL ? "rtl" : "ltr"}
       >
         <p className="text-black text-sm flex items-center justify-center mt-2 font-semibold">
-          {t("Donate")} {t("share")}
+          {t("Donate")} 
         </p>
         <img
           src="/HomeImages/donate.png"
@@ -85,6 +88,15 @@ const AlmsCowComponent = () => {
           alt=""
         />
       </button>
+      <div className="flex flex-col gap-y-3 text-center lg:text-xl mb-7  justify-center  items-center  ">
+          <p className=" text-black">
+            {t("servicesPara1")}
+          </p>
+          <p className=" text-black">
+          {t("servicesPara2")}
+
+          </p>
+        </div>
     </div>
   );
 };

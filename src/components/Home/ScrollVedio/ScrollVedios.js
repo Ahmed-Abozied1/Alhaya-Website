@@ -22,10 +22,10 @@ function ScrollVedios() {
 
   return (
     <section className="items-center">
-      <div className="con bg-navColor">
+      <div className="con ">
         <div className="lg:grid grid lg:grid-cols-3 md:grid-cols-2 lg:gap-5">
           {slice.map((vedio, index) => (
-            <div className="m-5" key={index}>
+            <div className="mr-5 ml-5 " key={index}>
               <ScrollCards vedio={vedio} />
             </div>
           ))}
