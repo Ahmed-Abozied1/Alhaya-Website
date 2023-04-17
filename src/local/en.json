@@ -19,10 +19,10 @@
   "stopBtn": "Stop",
   "OurServices": " Our Services",
   "Thecow": "The Cow",
-  "300$Dollar": "8000  Pound",
+  "300$Dollar": "8500  Pound",
   "Thesheep": "The Sheep",
-  "50$Dollar": "1400  Pound",
-  "servicesPara1": "If by feeding, 200 Pound will be added for the lamb and 1000 Pound for the Caw",
+  "50$Dollar": "1500  Pound",
+  "servicesPara1": "If by feeding, 200 Pound will be added for the lamb ",
   "servicesPara2": "  Fees include execution fees and administrative expenses",
   "OurAlms": "Our Alms",
   "Donateashareofwithus": "Donate with us",
@@ -46,6 +46,6 @@
   "answer5": "Vodafone cash or bank transfer.",
   "question6": "where is the implementation?",
   "answer6": "  Tanzania.",
-  "SeeMore":" See More...",
+  "SeeMore":" See More ...",
   "SeeLess":" See Less"
 }
