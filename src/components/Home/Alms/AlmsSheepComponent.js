@@ -67,7 +67,7 @@ const AlmsSheepComponent = () => {
       </button>
     </div> */}
 
-    {/* <button onClick={handleShareButtonClick} 
+    <button onClick={handleShareButtonClick} 
     className="btnShare flex flex-row justify-around w-full"
     dir={isRTL ? "rtl" : "ltr"}
 
@@ -80,7 +80,7 @@ const AlmsSheepComponent = () => {
           className="w-7 h-7 mt-1 flex items-center"
           alt=""
         />
-      </button> */}
+      </button>
       <div className="flex flex-col gap-y-3 text-center lg:text-xl mb-7  justify-center  items-center  ">
           <p className=" text-black">
             {t("servicesPara1")}
