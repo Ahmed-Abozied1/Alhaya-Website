@@ -70,7 +70,7 @@ const NavBar = () => {
             {t("Home")}
           </Link>
 
-          <Link
+          {/* <Link
             className="flex text-white hover:text-gray-500
             cursor-pointer transition-colors duration-300
             font-normal	 "
@@ -81,7 +81,7 @@ const NavBar = () => {
             duration={500}
           >
             {t("About us")}
-          </Link>
+          </Link> */}
 
           <Link
             className="flex text-white hover:text-gray-500
