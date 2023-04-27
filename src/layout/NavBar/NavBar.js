@@ -58,7 +58,7 @@ const NavBar = () => {
           className={`items-center hidden gap-6 lg:flex `}
           dir={isRTL ? "rtl" : "ltr"}
         >
-          <Link
+          {/* <Link
             to="home"
             spy={true}
             smooth={true}
@@ -68,7 +68,7 @@ const NavBar = () => {
             cursor-pointer transition-colors duration-300 font-normal	"
           >
             {t("Home")}
-          </Link>
+          </Link> */}
 
           <Link
             className="flex text-white hover:text-gray-500
