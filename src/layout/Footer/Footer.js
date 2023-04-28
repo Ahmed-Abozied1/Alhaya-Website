@@ -151,7 +151,7 @@ const Footer = () => {
                     <img alt="" src={facebook} className="lg:h-10 h-10" />
                   </span>
                 </Link>
-                <Link
+                {/* <Link
                   className="mr-4 ml-4"
                   to="https://twitter.com/AlhayaInAfrica?t=Qq8W3lBluleybJEC15vW1Q&s=08"
                   target="_blank"
@@ -159,7 +159,7 @@ const Footer = () => {
                   <span>
                     <img alt="" src={twitter} className="lg:h-10 h-10" />
                   </span>
-                </Link>
+                </Link> */}
                 <Link
                   className=" mr-3"
                   to="https://www.snapchat.com/add/alhayahinafrica?share_id=5_Ohuoe40eQ&locale=ar-AA"
