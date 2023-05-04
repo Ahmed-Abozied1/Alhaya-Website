@@ -10,12 +10,12 @@ const Portfolio = () => {
       id="portfolio"
       className="profileSection flex justify-around flex-col items-center"
     >
-      <header class="mb-2 mt-2 text-4xl font-bold">
+      {/* <header class="mb-2 mt-2 text-4xl font-bold">
         <div class="relative titlee">
           <img src="/HomeImages/title.png" alt="" />
           <h1 class="lg:text-3xl text-2xl text-white">{t("OurPortfolio")}</h1>
         </div>
-      </header>
+      </header> */}
       <div class="flex flex-col gap-y-3 text-center lg:text-xl  mt-8  justify-center  items-center  ">
         <p class=" text-white">{t("PortofolioPara1")} </p>
         <p class=" text-white">{t("PortofolioPara2")}</p>
