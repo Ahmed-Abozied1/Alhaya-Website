@@ -23,14 +23,14 @@ const Questions = () => {
         alt="-alt-text"
       />
 
-      {/* <header class="lg:m-2 m-0  text-4xl font-bold">
+      <header class="lg:m-2 m-0  text-4xl font-bold">
         <div class="relative titlee">
           <img src="/HomeImages/title.png" alt="" />
           <h1 class="lg:text-3xl text-2xl  ">
             {t("FrequentlyAskedQuestions")}
           </h1>
         </div>
-      </header> */}
+      </header>
       <div className="w-full px-4 pt-2 z-10">
         <div className="mx-auto  w-full max-w-md rounded-md  p-2">
           <Disclosure>
