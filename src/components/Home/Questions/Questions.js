@@ -17,11 +17,11 @@ const Questions = () => {
         className="absolute top-0 right-0 lg:w-64  w-28 "
         alt="-alt-text"
       />
-      {/* <img
+      <img
         src="/HomeImages/QusetionImages/bottomMap.png"
         className="absolute bottom-0 left-0 lg:w-64  w-28"
         alt="-alt-text"
-      /> */}
+      />
 
       <header class="lg:m-2 m-0  text-4xl font-bold">
         <div class="relative titlee">
