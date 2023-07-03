@@ -19,7 +19,7 @@ const Header = () => {
         </div>
         <div className={``}>
           <img
-            src="/HomeImages/Maskgroup.png"
+            src="/images/header.jpg"
             alt="HeaderImage"
             className="w-auto object-contain"
           />

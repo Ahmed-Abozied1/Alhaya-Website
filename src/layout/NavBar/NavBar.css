@@ -13,6 +13,26 @@
     display: block;
     height: 6px;
   }
+/* Add this CSS to your existing styles */
+.header-links li a {
+  font-size: 1.5rem;
+  
+  font-weight: bold;
+  /* Modify the font size as needed */
+}
+
+/* Sticky navbar */
+nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Z-index to make sure the navbar appears above other content */
+nav.sticky {
+  z-index: 50;
+}
 
   .header-links li.active span::before {
     background-color: #fcae04;
