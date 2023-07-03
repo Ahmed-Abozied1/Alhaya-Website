@@ -8,14 +8,13 @@ const NotFound=lazy(()=>import ('./screens/NotFound'));
 
 function App() {
   return (
-    // <Suspense fallback={<Loading></Loading>} timeout={3000}>
+    <Suspense fallback={<Loading></Loading>} timeout={3000}>
 
-    //   <Routes>
-    //     <Route path='/' element={<Home />} />
-    //     <Route path='*' element={<NotFound />} />
-    //   </Routes>
-    //   </Suspense>
-<Home/>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        {/* <Route path='*' element={<NotFound />} /> */}
+      </Routes>
+      </Suspense>
   );
 }
 

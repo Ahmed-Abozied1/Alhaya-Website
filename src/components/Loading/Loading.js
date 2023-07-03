@@ -37,7 +37,7 @@ const Loading = ({ children }) => {
             }}
           >
             <img
-              src={loadingImage}
+              src="/images/logo.jpg"
               alt="Loading..."
               className="animate__zoomIn animate__animated "
             />
