@@ -30,13 +30,13 @@ const ImageAndText = () => {
         <h1 className="absolute  font-semibold  header w-full  text-black">
           نهاية كل يوم طويل تحتاج شوية دلع!
           <br />
-          اكثر من 500 عميل فى غاية السعادة من خدماتنا للعنايه
+          <span className="text-xl"> اكثر من 500 عميل فى غاية السعادة من خدماتنا للعنايه</span>
           <br />
           <br />
           {/* <div className="headerIcon">
             <p >دلع نفسك واحجز الان</p>
           </div> */}
-<Button/>
+          <Button />
         </h1>
       </div>
 

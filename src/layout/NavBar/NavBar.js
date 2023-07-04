@@ -171,19 +171,39 @@
 // };
 
 // export default NavBar;
-import { useState } from "react";
+
+import React, { useState } from "react";
+import { useMediaQuery } from "@react-hook/media-query";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
 
   return (
-    <nav className="w-full bg-white shadow sticky top-0 z-50">
+    <nav className="w-full bg-navColor  shadow sticky top-0 z-50">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="/">
-              <img src="images/logo.jpg" className="w-10 h-10 rounded-lg" alt="Logo" />
-            </a>
+            {/* Render the logo centered for small screens */}
+            {isSmallScreen ? (
+              <div className="flex items-center justify-center flex-1">
+                <a href="/">
+                  <img
+                    src="images/logo.jpg"
+                    className="w-12 h-12 md:w-12 md:h-12 rounded-lg object-contain"
+                    alt="Logo"
+                  />
+                </a>
+              </div>
+            ) : (
+              <a href="/">
+                <img
+                  src="images/logo.jpg"
+                  className="w-10 h-10 rounded-lg"
+                  alt="Logo"
+                />
+              </a>
+            )}
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -196,6 +216,7 @@ export default function NavBar() {
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
+                    {/* SVG icons for open navigation */}
                   </svg>
                 ) : (
                   <svg
@@ -206,6 +227,7 @@ export default function NavBar() {
                     stroke="currentColor"
                     strokeWidth={2}
                   >
+                    {/* SVG icons for closed navigation */}
                   </svg>
                 )}
               </button>
@@ -214,22 +236,24 @@ export default function NavBar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 ${
+              isSmallScreen ? "justify-center" : "justify-self-center"
+            } pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-white ">
                 <a href="/" className="text-xl ">
                   خدماتنا
                 </a>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-white ">
                 <a href="/" className="text-xl">
                   رأى عملائنا
                 </a>
               </li>
-              <li className="text-gray-600  hover:text-blue-600">
+              <li className="text-white  ">
                 <a href="/" className="text-xl">
                   الرئيسية
                 </a>

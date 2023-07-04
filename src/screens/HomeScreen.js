@@ -9,15 +9,19 @@ import Portfolio  from "../components/Home/Portfolio/Portfolio"
 import Questions  from "../components/Home/Questions/Questions"
 import MyAboutUs from '../components/Home/MyAboutUs/MyAboutUs';
 import MyServices from '../components/Home/MyServices/MyServices';
-
+import Carousell from '../components/Carousell/Carousell';
 const HomeScreen = () => {
   return (
     <Layout>
-     <div className=' mx-auto min-h-screen   bg-main'>
+     <div className=' mx-auto  min-h-screen w-full bg-main'>
       <Header/>
       {/* <ScrollVedios/> */}
       <MyAboutUs/>
       <MyServices/>
+      <div className='text-center w-full '>
+              <Carousell/>
+
+      </div>
       {/* <AboutUs/> */}
       {/* <Services/> */}
       {/* <Alms/> */}

@@ -1,3 +1,17 @@
 .App {
   text-align: center;
 }
+
+.slick-slide
+{
+    display: none;
+    float: left; 
+
+    height: 100%;
+    min-height: 1px;
+
+    text-Align: center;
+    justify-Content: center;
+    align-Items: center;
+    
+}

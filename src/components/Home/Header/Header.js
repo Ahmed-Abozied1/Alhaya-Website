@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div id="home" className="lg:pt-0 pt-5  md:px-20 px-8">
       <div
-        className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-10"
+        className="items-center flex flex-col lg:grid lg:grid-cols-2 lg:gap-10"
         dir={isRTL ? "rtl" : "ltr"}
       >
         <div className={` flex lg:gap-10 gap-8 flex-col`}>
@@ -21,7 +21,7 @@ const Header = () => {
           <img
             src="/images/header.jpg"
             alt="HeaderImage"
-            className="w-auto object-contain"
+            className="w-auto object-contain rounded-xl"
           />
         </div>
       </div>

@@ -1,0 +1,12 @@
+.contentContainer {
+    display: flex;
+    justify-content: center
+    }
+    img {
+        margin: auto;
+    }
+    
+    .slick-slide > div {
+        display: grid;
+        place-items: center;
+    }
